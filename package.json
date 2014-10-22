@@ -1,0 +1,65 @@
+{
+  "name": "web-rebels-2015",
+  "version": "0.1.0",
+  "author": {
+    "name": "Web Rebels",
+    "email": "kontor@webrebels.org"
+  },
+  "description": "The Web Rebels 2015 web site",
+  "main": "",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:webrebels/web-rebels-2015.git"
+  },
+  "keywords": [
+    "conference",
+    "javascript",
+    "web"
+  ],
+  "homepage": "https://www.webrebels.org/",
+  "scripts": {
+    "predeploy": "npm run-script minify",
+    "pretest": "jshint ./bin/*.js ./bin/twitter/lib/*.js ./gulpfile.js ./public/src/js/lib/*.js ./public/src/js/*.js",
+    "test": "mocha ./test/*.js --reporter spec",
+    "start": "node ./bin/server.js",
+    "minify": "gulp"
+  },
+  "contributors": [
+    {
+      "name": "Trygve Lie",
+      "email": "post@trygve-lie.com"
+    },
+    {
+      "name": "Espen Dalløkken",
+      "email": "espen@dallokken.com"
+    },
+    {
+      "name": "Bodil Stokke",
+      "email": "bodil@bodil.tv"
+    }
+  ],
+  "engines": {
+    "node": "0.10.x"
+  },
+  "bugs": {
+    "url": "https://github.com/webrebels/web-rebels-2015/issues"
+  },
+  "licenses": [],
+  "subdomain": "webreb2015",
+  "devDependencies": {
+    "jshint": "latest",
+    "mocha": "latest",
+    "chai": "latest",
+    "gulp": "latest",
+    "gulp-concat": "latest",
+    "gulp-uglify": "latest",
+    "gulp-minify-css": "latest"
+  },
+  "dependencies": {
+    "winston": "0.7.x",
+    "convict": "0.4.x",
+    "uuid": "1.4.x",
+    "hapi": "^7.0.0",
+    "handlebars": "^2.0.0"
+  }
+}
