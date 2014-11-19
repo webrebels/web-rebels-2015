@@ -46,6 +46,10 @@
   },
   "licenses": [],
   "subdomain": "webreb2015",
+  "domains": [
+    "www.webrebels.org",
+    "webrebels.org"
+  ],
   "devDependencies": {
     "jshint": "latest",
     "mocha": "latest",
