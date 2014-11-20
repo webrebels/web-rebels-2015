@@ -43,4 +43,13 @@ server.route({
     }
 });
 
+server.route({
+    method: 'GET',
+    path: '/sponsors/packages',
+    handler: function(request, reply){
+        reply.view('sponsor_packages', {
+            pageTitle: 'Web Rebels Sponsorship Packages'
+        })
+    }
+});
 module.exports = server;
