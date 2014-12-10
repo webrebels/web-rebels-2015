@@ -20,7 +20,8 @@
   "scripts": {
     "predeploy": "npm run-script minify",
     "pretest": "jshint ./bin/*.js ./bin/twitter/lib/*.js ./gulpfile.js ./public/src/js/lib/*.js ./public/src/js/*.js",
-    "test": "mocha ./test/*.js --reporter spec",
+    "test": "npm run jshint && mocha ./test/*.js --reporter spec",
+    "jshint": "jshint bin config gulpfile.js",
     "start": "node ./bin/server.js",
     "minify": "gulp"
   },
@@ -51,13 +52,13 @@
     "webrebels.org"
   ],
   "devDependencies": {
-    "jshint": "latest",
-    "mocha": "latest",
     "chai": "latest",
     "gulp": "latest",
     "gulp-concat": "latest",
+    "gulp-minify-css": "latest",
     "gulp-uglify": "latest",
-    "gulp-minify-css": "latest"
+    "jshint": "latest",
+    "mocha": "latest"
   },
   "dependencies": {
     "winston": "0.8.x",
