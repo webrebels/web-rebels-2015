@@ -11,7 +11,7 @@ var config      = require('./config.js'),
         css     : (config.get('env') === 'development') ? config.get('cssFiles') : config.get('cssMinFile')
     };
 
-var server = new Hapi.Server(8000);
+var server = new Hapi.Server(config.get('httpServerPort'));
 server.views({
     engines: {
         'html': {
