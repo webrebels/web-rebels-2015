@@ -60,8 +60,8 @@
     "gulp-minify-css": "latest"
   },
   "dependencies": {
-    "winston": "0.7.x",
-    "convict": "0.4.x",
+    "winston": "0.8.x",
+    "convict": "0.6.x",
     "uuid": "1.4.x",
     "hapi": "^7.0.0",
     "handlebars": "^2.0.0"
