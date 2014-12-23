@@ -6,7 +6,7 @@
     "email": "kontor@webrebels.org"
   },
   "description": "The Web Rebels 2015 web site",
-  "main": "",
+  "main": "./bin/server.js",
   "repository": {
     "type": "git",
     "url": "git@github.com:webrebels/web-rebels-2015.git"

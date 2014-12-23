@@ -29,7 +29,8 @@ env: {
         doc     : "The port the server should bind to",
         format  : "port",
         default : 8000,
-        env     : "NODE_HTTP_SERVER_PORT"
+        env     : "NODE_HTTP_SERVER_PORT",
+        art     : "port"
     },
 
     docRoot: {
