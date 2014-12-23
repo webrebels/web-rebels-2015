@@ -102,59 +102,88 @@ if (config.get('env') === 'development') {
 }
 
 
+
 // Set http routes
 
 app.get('/', function (req, res) {
     res.render('layouts/index', {
-        pageTitle: 'Web Rebels ☠ Oslo ☠ 21-22 May 2014'
+        pageTitle: 'Web Rebels ☠ Oslo ☠ 21-22 May 2015'
     });
 });
 app.get('/index', function (req, res) {
     res.render('layouts/index', {
-        pageTitle: 'Web Rebels ☠ Oslo ☠ 21-22 May 2014'
+        pageTitle: 'Web Rebels ☠ Oslo ☠ 21-22 May 2015'
     });
 });
 app.get('/sponsors', function (req, res) {
-    // res.render('sponsors', {externals: externals, pageTitle: 'Our sponsors without whom none of this would be possible ☠ Web Rebels ☠ Oslo 2015'});
+    res.render('layouts/sponsors', {
+        pageTitle: 'Our sponsors without whom none of this would be possible ☠ Web Rebels ☠ Oslo 2015'
+    });
 });
 app.get('/sponsoroptions', function (req, res) {
-    // res.render('sponsoroptions', {externals: externals, pageTitle: 'Sponsoring options for the Web Rebels ☠ Oslo 2015'});
+    res.render('layouts/sponsorOptions', {
+        pageTitle: 'Sponsoring options for the Web Rebels Conference ☠ Oslo 2015'
+    });
 });
 app.get('/about', function (req, res) {
-    // res.render('about', {externals: externals, pageTitle: '☠ About the Web Rebels ☠'});
+    res.render('layouts/about', {
+        pageTitle: 'About the Web Rebels Conference ☠ Oslo 2015'
+    });
 });
 app.get('/videos', function (req, res) {
-    // res.redirect('http://vimeo.com/channels/wr2014');
+    res.render('layouts/videos', {
+        pageTitle: 'Videos from the Web Rebels Conference ☠ Oslo 2015'
+    });
 });
 app.get('/policies', function (req, res) {
-    // res.render('policies', {externals: externals, pageTitle: '☠ Policies for the Web Rebels ☠'});
+    res.render('layouts/policies', {
+        pageTitle: 'Policies for the Web Rebels Web Rebels Conference ☠ Oslo 2015'
+    });
 });
 app.get('/tickets', function (req, res) {
-    // res.render('tickets', {externals: externals, pageTitle: 'Tickets for the Web Rebels ☠ Oslo 2015'});
+    res.render('layouts/tickets', {
+        pageTitle: 'Tickets for the Web Rebels Web Rebels Conference ☠ Oslo 2015'
+    });
 });
-app.get('/ticketConfirmation', function (req, res) {
-    // res.render('ticketConfirmation', {externals: externals, pageTitle: 'Thank you for registering with the Web Rebels ☠ Oslo 2015'});
+app.get('/ticketconfirmation', function (req, res) {
+    res.render('layouts/ticketConfirmation', {
+        pageTitle: 'Thank you for registering with the Web Rebels Conference ☠ Oslo 2015'
+    });
 });
 app.get('/location', function (req, res) {
-    // res.render('location', {externals: externals, pageTitle: 'Location of the Web Rebels ☠ Oslo 2015'});
+    res.render('layouts/location', {
+        pageTitle: 'Location of the Web Rebels Web Rebels Conference ☠ Oslo 2015'
+    });
 });
 app.get('/oslo', function (req, res) {
-    // res.render('oslo', {externals: externals, pageTitle: 'Oslo survival guide for Web Rebels ☠ Oslo 2015'});
+    res.render('layouts/oslo', {
+        pageTitle: 'Oslo survival guide for the Web Rebels Web Rebels Conference ☠ Oslo 2015'
+    });
 });
 app.get('/family', function (req, res) {
-    // res.render('family', {externals: externals, pageTitle: 'Family guide for Web Rebels ☠ Oslo 2015'});
+    res.render('layouts/family', {
+        pageTitle: 'Family guide for the Web Rebels Web Rebels Conference ☠ Oslo 2015'
+    });
 });
 app.get('/openmic', function (req, res) {
-    // res.render('openmic', {externals: externals, pageTitle: 'Open Mic Night - Web Rebels ☠ Oslo 2015'});
+    res.render('layouts/openmic', {
+        pageTitle: 'Open Mic Night at the Web Rebels Web Rebels Conference ☠ Oslo 2015'
+    });
 });
 app.get('/schedule', function (req, res) {
-    // res.render('schedule', {externals: externals, pageTitle: 'Schedule for Web Rebels ☠ Oslo 2015'});
+    res.render('layouts/schedule', {
+        pageTitle: 'Schedule for the Web Rebels Web Rebels Conference ☠ Oslo 2015'
+    });
 });
 app.get('/speakers', function (req, res) {
-    // res.render('speakers', {externals: externals, pageTitle: 'Speakers - Web Rebels ☠ Oslo 2015'});
+    res.render('layouts/speakers', {
+        pageTitle: 'Speakers at the Web Rebels Web Rebels Conference ☠ Oslo 2015'
+    });
 });
 app.get('/roadbook', function (req, res) {
-    // res.render('roadbook', {externals: externals, pageTitle: 'Speakers Roadbook - Web Rebels ☠ Oslo 2015'});
+    res.render('layouts/roadbook', {
+        pageTitle: 'Roadbook for the Web Rebels Web Rebels Conference speakers ☠ Oslo 2015'
+    });
 });
 
 
