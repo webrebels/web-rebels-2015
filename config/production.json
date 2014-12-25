@@ -1,4 +1,3 @@
 {
-    "docRoot" 			: "./public/build",
-    "logConsoleLevel"   : "error"
+    "logConsoleLevel"   : "debug"
 }

@@ -16,7 +16,6 @@ var fs      = require('fs'),
 server.listen(config.get('httpServerPort'), function () {
     log.info('Web Rebels 2015 website running at http://localhost:' + config.get('httpServerPort') + '/');
     log.info('server process has pid ' + process.pid);
-    log.info('using templates in ' + config.get('viewRoot'));
     log.info('serving static files from ' + config.get('docRoot'));
 });
 

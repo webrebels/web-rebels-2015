@@ -1,5 +1,5 @@
 {
-  "name": "web-rebels-2015",
+  "name": "web-rebels-www",
   "version": "0.1.0",
   "author": {
     "name": "Web Rebels",
@@ -66,9 +66,8 @@
     "serve-static": "1.x",
     "compression": "1.x",
     "helmet": "0.5.x",
-    "handlebars": "^2.0.0",
     "browserify": "7.x",
     "combined-stream": "0.0.x",
-    "express-handlebars": "1.x"
+    "hbs": "2.x"
   }
 }
