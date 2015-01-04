@@ -1,3 +1,45 @@
-* {
-	background-color: black;
+/* Normalizing elements */
+
+body, h1, h2, div, p, ul, li, form, input, button, fieldset {
+    margin:                         0;
+    padding:                        0;
+}
+
+body {
+    font:                           100% sans-serif;                                                    /* ~16px; */
+    line-height:                    1.5;
+}
+
+a,
+a:visited {
+    color:                          rgb(8, 181, 228);
+}
+
+ul {
+    list-style:                     none;
+}
+
+form {
+    overflow:                       hidden;
+}
+
+fieldset {
+    border:                         none;
+}
+
+button,
+input[type="submit"] {
+    display:                        block;
+    border:                         none;
+    cursor:                         pointer;
+    background:                     transparent;
+}
+
+button:focus {
+    outline:                        none;
+}
+
+table {
+    border-spacing:                 0;
+    border-collapse:                collapse;
 }
