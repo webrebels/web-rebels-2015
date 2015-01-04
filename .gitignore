@@ -1,4 +1,9 @@
-logs
+public
+public/**/*
+.DS_Store
+tmp/**/*
+.idea
+.idea/**/*
+*.iml
 *.log
 node_modules
-.DS_Store

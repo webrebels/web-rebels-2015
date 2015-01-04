@@ -1,3 +1,4 @@
 {
-    "logConsoleLevel"   : "debug"
+    "logConsoleLevel"   : "debug",
+    "docRoot" 			: "/public"
 }

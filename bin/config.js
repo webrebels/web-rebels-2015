@@ -37,7 +37,7 @@ env: {
     docRoot: {
         doc     : "Document root for static files to be served by the http server",
         format  : "*",
-        default : "/public",
+        default : "/src",
         env     : "NODE_HTTP_DOC_ROOT"
     },
 

@@ -6,24 +6,17 @@
 var gulp        = require('gulp'),
     concat      = require('gulp-concat'),
     uglify      = require('gulp-uglify'),
-    minifyCSS   = require('gulp-minify-css'),
-    config      = require('./bin/config.js');
-
-
-
-function prependDocRoot(path) {
-    return config.get('docRoot') + path;
-}
+    minifyCSS   = require('gulp-minify-css');
 
 
 
 // Minify JS
 
 gulp.task('js', function() {
-    return gulp.src(config.get('jsFiles').map(prependDocRoot))
+    return gulp.src(['src/js/script.js'])
         .pipe(uglify({outSourceMap: false}))
-        .pipe(concat(config.get('jsMinFile')[0]))
-        .pipe(gulp.dest('public/build'));
+        .pipe(concat('script.js'))
+        .pipe(gulp.dest('./public/js/'));
 });
 
 
@@ -31,10 +24,10 @@ gulp.task('js', function() {
 // Minify CSS
 
 gulp.task('css', function() {
-    return gulp.src(config.get('cssFiles').map(prependDocRoot))
+    return gulp.src(['src/css/styles.css'])
         .pipe(minifyCSS({removeEmpty : true}))
-        .pipe(concat(config.get('cssMinFile')[0]))
-        .pipe(gulp.dest('public/build'));
+        .pipe(concat('styles.css'))
+        .pipe(gulp.dest('./public/css/'));
 });
 
 
@@ -42,8 +35,8 @@ gulp.task('css', function() {
 // Copy gfx
 
 gulp.task('gfx', function() {
-    return gulp.src(config.get('gfxFiles').map(prependDocRoot))
-        .pipe(gulp.dest('public/build/img'));
+    return gulp.src('./src/gfx/**/*')
+        .pipe(gulp.dest('./public/gfx/'));
 });
 
 
@@ -51,16 +44,16 @@ gulp.task('gfx', function() {
 // Copy favicon
 
 gulp.task('icon', function() {
-    return gulp.src('public/src/favicon.ico')
-        .pipe(gulp.dest('public/build'));
+    return gulp.src('./src/favicon.ico')
+        .pipe(gulp.dest('./public'));
 });
 
 
 // Copy fonts
 
 gulp.task('fonts', function() {
-    return gulp.src(config.get('fontFiles').map(prependDocRoot))
-        .pipe(gulp.dest('public/build/webfonts'));
+    return gulp.src('./src/fonts/**/*')
+        .pipe(gulp.dest('./public/fonts/'));
 });
 
 
