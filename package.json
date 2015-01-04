@@ -18,12 +18,10 @@
   ],
   "homepage": "https://www.webrebels.org/",
   "scripts": {
-    "predeploy": "npm run-script minify",
-    "pretest": "jshint ./bin/*.js ./bin/twitter/lib/*.js ./gulpfile.js ./public/src/js/lib/*.js ./public/src/js/*.js",
-    "test": "npm run jshint && mocha ./test/*.js --reporter spec",
-    "jshint": "jshint bin config gulpfile.js",
+    "predeploy": "npm run-script min",
+    "jshint": "jshint ./bin/*.js ./bin/**/*.js ./src/js/*.js ./gulpfile.js",
     "start": "node ./bin/server.js",
-    "minify": "gulp"
+    "min": "gulp"
   },
   "contributors": [
     {
@@ -66,7 +64,7 @@
     "serve-static": "1.x",
     "compression": "1.x",
     "helmet": "0.5.x",
-    "browserify": "7.x",
+    "browserify": "8.x",
     "combined-stream": "0.0.x",
     "hbs": "2.x"
   }
