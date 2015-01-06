@@ -28,7 +28,7 @@ var replPath = './repl.' + config.get('httpServerPort') + '.sock';
 var netRepl = net.createServer(function (socket) {
     log.info('user connected to the REPL');
     var replServer = repl.start({
-        prompt: 'mobile > ',
+        prompt: 'wr > ',
         input: socket,
         output: socket,
         terminal: true,

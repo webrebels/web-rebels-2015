@@ -3,6 +3,7 @@
 "use strict";
 
 var path    = require('path'),
+    fs      = require('fs'),
     convict = require('convict'),
     pckage  = require('../package.json');
 
@@ -64,7 +65,13 @@ env: {
 // Load and validate configuration depending on environment
 
 var env = conf.get('env');
-conf.loadFile(path.resolve(__dirname, '../config/', env + '.json'));
+
+if (fs.existsSync(path.resolve(__dirname, '../config/local.json'))) {
+    conf.loadFile([path.resolve(__dirname, '../config/', env + '.json'), path.resolve(__dirname, '../config/local.json')]);
+} else {
+    conf.loadFile([path.resolve(__dirname, '../config/', env + '.json')]);
+}
+
 conf.validate();
 
 
