@@ -2,12 +2,33 @@
 <h2>Call for papers is now open!</h2>
 
 
+<h2>Open Mic request</h2>
+{{# errors}}
+<p style="color: black; background-color: #f2dede; padding: 15px;">{{msg}}</p>
+{{/ errors}}
+{{# success}}
+<p style="color: black; background-color: #dff0d8; padding: 15px;">{{msg}}</p>
+{{/ success}}
+
+<form action="/api/v1/openmic" method="post">
+
+        <label for="name">Full name</label>
+        <input type="text" name="name" id="name" required>
+
+        <label for="email">Email Address</label>
+        <input type="email" name="email" id="email" required>
+
+        <label for="description">Describe your talk</label>
+        <textarea name="description" id="description" required></textarea>
+
+        <input type="submit">
+</form>
+
 <h3>FAQ</h3>
 <p><strong>Do I need a ticket to submit a talk?</strong><br>
 No. Open Mic is an open community event which is open for everyone to attend and submit talks.</p>
 <p><strong>What equipment is at the Open Mic venue?</strong><br>
 There will be a projector, microphone and Wi-Fi available. If you don't have a device to do a presentation, let us know and we'll sort it out.</p>
-
 
 <a name="aboutomn"></a><h2>About Open Mic Night</h2>
 <p>The Open Mic Night takes place at
