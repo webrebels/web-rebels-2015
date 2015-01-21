@@ -9,6 +9,8 @@ var path            = require('path'),
 
     helmet          = require('helmet'),
     express         = require('express'),
+    bodyParser      = require('body-parser'),
+    expressValidator= require('express-validator'),
     compress        = require('compression')(),
     serveStatic     = require('serve-static'),
     hbs             = require('hbs'),
@@ -17,6 +19,7 @@ var path            = require('path'),
 
     middleSSL       = require('./middleware/ssl.js'),
     routeCsp        = require('./routes/csp.js'),
+    openmic         = require('./routes/openmic.js'),
     routeAssets     = require('./routes/assets.js');
 
 
@@ -80,6 +83,11 @@ app.use(helmet.csp({
 
 app.post('/api/v1/csp', routeCsp);
 
+app.use(bodyParser.urlencoded({
+    extended: true
+}));
+app.use(expressValidator());
+app.post('/api/v1/openmic', openmic);
 
 
 // Ping route for external monitoring
@@ -96,8 +104,6 @@ if (config.get('env') === 'development') {
     app.get('/css/app.css', routeAssets.libCss);
     app.get('/js/app.js', routeAssets.appJs);
 }
-
-
 
 // Set http routes
 

@@ -7,8 +7,6 @@ var path    = require('path'),
     convict = require('convict'),
     pckage  = require('../package.json');
 
-
-
 // Configuration schema
 
 var conf = convict({
@@ -56,6 +54,14 @@ env: {
         default : false,
         env     : "NODE_LOG_CONSOLE_SILENT",
         arg     : "log-console-silent"
+    },
+
+    mandrillApiKey: {
+        doc     : "The Mandrill API key",
+        format  : "*",
+        default : false,
+        env     : "MANDRILL_API_KEY",
+        arg     : "mandrill-api-key"
     }
 
 });
