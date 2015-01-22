@@ -109,7 +109,8 @@ if (config.get('env') === 'development') {
 
 app.get('/', function (req, res) {
     res.render('index', {
-        pageTitle: 'Web Rebels ☠ Oslo ☠ 21-22 May 2015'
+        pageTitle: 'Web Rebels ☠ Oslo ☠ 21-22 May 2015',
+        header: 'penthouse'
     });
 });
 app.get('/index', function (req, res) {
@@ -159,7 +160,8 @@ app.get('/location', function (req, res) {
 });
 app.get('/oslo', function (req, res) {
     res.render('oslo', {
-        pageTitle: 'Oslo survival guide for the Web Rebels Web Rebels Conference ☠ Oslo 2015'
+        pageTitle: 'Oslo survival guide for the Web Rebels Web Rebels Conference ☠ Oslo 2015',
+        header: 'oslosurvival'
     });
 });
 app.get('/family', function (req, res) {
