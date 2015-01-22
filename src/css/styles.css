@@ -62,6 +62,7 @@ ul, ol {
 
 h1, h2, h3 {
    margin: 0;
+   line-height: 1.1;
 }
 
 /* hiding content ref http://snook.ca/s/992 */
@@ -226,6 +227,12 @@ All rules for font & font-size here only. */
    font-size: 0.8em;
    text-transform: uppercase;
    letter-spacing: 2px;
+}
+
+.btn {
+   font-family: Arial, sans-serif;
+   font-size: 18px;
+   font-weight: bold;	
 }
 
 /* tiny type tweeks */
@@ -630,6 +637,47 @@ li:nth-of-type(3n-1) .speaker-img {
    }
 }
 
+
+/* Open Mic request */
+
+.openmicform {
+	background-color: #F2F2F2;
+	padding: 1em;
+	margin: 1em 0 2em 0;
+}
+
+.openmicform p {
+	margin-bottom: 0.5em;
+}
+
+.openmicform label {
+
+}
+
+.openmicform input,
+.openmicform textarea {
+   border: 2px solid #ccc;
+   padding: 1em;
+   width: 95%;
+   margin: 0 auto 1em auto;
+}
+
+.openmicform input.btn {
+	width: 33%;
+	background-color: #aaa;
+	border: 0;
+	float: right;
+}
+
+.openmicform input.btn:hover {
+	background-color: #688C84;	
+}
+
+@media screen and (min-width: 800px) { 
+   .openmicform {
+   	padding: 2em;
+   }
+}
 
 /* Navigation in footer */
 

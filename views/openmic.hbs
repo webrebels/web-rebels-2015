@@ -1,57 +1,49 @@
 <div class="floor">
   <div class="inner-nrw">
-<h1 class="ratherloud-heading">Open Mic Night</h1>
+<h1 class="ratherloud-heading">Open Mic Night – 20 May</h1>
 
+<p>Wednesday evening we warm up with an open community event. This small pre-party takes place at
+  <a href="http://vbarogbistro.no/">V Bar &amp; Restaurant</a>, next door to the <a href="/location">conference venue</a>.</p>
+  
+<ul>
+   <li>open for everyone, no ticket needed</li>
+   <li>hang out with speakers, attendants and other members of our community</li>
+   <li>batches of 10 minute lightning talks</li>
+   <li>have you got something to share? Submit a talk!</li>
+</ul>
 
-<h2>Open Mic request</h2>
+<div class="openmicform group">
+<h2>Submit a talk for Open Mic Night!</h2>
+<p>~10 minutes talks on any relevant topic. You can do slides, live code or just talk!</p>
 {{# errors}}
 <p style="color: black; background-color: #f2dede; padding: 15px;">{{msg}}</p>
 {{/ errors}}
 {{# success}}
 <p style="color: black; background-color: #dff0d8; padding: 15px;">{{msg}}</p>
 {{/ success}}
-
 <form action="/api/v1/openmic" method="post">
 
-        <label for="name">Full name</label>
+        <label for="name" class="notsoloud">Full name</label>
         <input type="text" name="name" id="name" required>
 
-        <label for="email">Email Address</label>
+        <label for="email" class="notsoloud">Email Address</label>
         <input type="email" name="email" id="email" required>
 
-        <label for="description">Describe your talk</label>
+        <label for="description" class="notsoloud">Describe your talk</label>
         <textarea name="description" id="description" required></textarea>
 
-        <input type="submit">
+        <input type="submit" class="btn">
 </form>
+</div>
 
-<h3>FAQ</h3>
-<p><strong>Do I need a ticket to submit a talk?</strong><br>
+
+<h3>Do I need a ticket to submit a talk?</h3>
 No. Open Mic is an open community event which is open for everyone to attend and submit talks.</p>
-<p><strong>What equipment is at the Open Mic venue?</strong><br>
+
+<h3>What equipment is at the Open Mic venue?</h3>
 There will be a projector, microphone and Wi-Fi available. If you don't have a device to do a presentation, let us know and we'll sort it out.</p>
 
-<a name="aboutomn"></a><h2>About Open Mic Night</h2>
-<p>The Open Mic Night takes place at
-  <a href="http://vbarogbistro.no/">V Bar &amp; Restaurant</a>
-  which is just next door to the <a href="/location">conference venue</a>. At the Open
-  Mic Night you will be able to get on the stage and do a lightning talk on any topic you want.
-</p>
-
-<p>At Open Mic Night, you get to hang out
-  and listen to some brilliant  talks by some of the amazing
-  new talent. One of them is coming back as a speaker at
-  this year's conference. This is exactly why we hosted the
-  Open Mic Night: to help promote new talent!
-</p>
-
-<h3>Here's How Open Mic Night Works</h3>
-<ul>
-    <li>Open Mic Night is a small pre-party</li>
-    <li>Batches of 10 minute lightning talks</li>
-    <li>Hang out with speakers, attendants and other members of our community</li>
-</ul>
-<h3>This is your chance to shine - why we have Open Mic!</h3>
+<h3 class="ratherloud-heading">This is your chance to shine</h3>
 <p>
   There is always a first time for everything. There is a
   first time for when you laid your hand on a keyboard, there
