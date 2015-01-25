@@ -1,5 +1,7 @@
 # Web Rebels 2015 Conference
 
+[![Dependencies](https://img.shields.io/david/webrebels/web-rebels-2015.svg?style=flat-square)](https://david-dm.org/webrebels/web-rebels-2015)
+
 This is the source code for the Web Rebels 2015 Conference web site.
 
 # Before we start
