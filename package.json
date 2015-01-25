@@ -58,7 +58,7 @@
   },
   "dependencies": {
     "body": "4.x",
-    "body-parser": "1.10.1",
+    "body-parser": "1.10.x",
     "browserify": "8.x",
     "combined-stream": "0.0.x",
     "compression": "1.x",
@@ -66,9 +66,9 @@
     "express": "4.x",
     "express-validator": "^2.8.0",
     "hbs": "2.x",
-    "helmet": "0.5.x",
+    "helmet": "0.6.x",
     "mandrill-api": "1.0.41",
-    "serve-static": "1.x",
+    "serve-static": "1.8.x",
     "winston": "0.8.x"
   }
 }
