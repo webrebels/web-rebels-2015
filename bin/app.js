@@ -66,9 +66,10 @@ app.use(helmet.frameguard('deny'));
 
 app.use(helmet.csp({
     defaultSrc: ["'none'"],
-    scriptSrc: ["'self'", "'unsafe-inline'", "www.google-analytics.com"],
+    scriptSrc: ["'self'", "'unsafe-inline'", "www.google-analytics.com", "ssl.google-analytics.com"],
     styleSrc: ["'self'", "'unsafe-inline'"],
-    imgSrc: ["'self'", "data:", "server.arcgisonline.com"],
+    imgSrc: ["'self'", "data:", "server.arcgisonline.com", "ssl.google-analytics.com"],
+    fontSrc: ["'self'"],
     connectSrc: ["*"],
     sandbox: ['allow-forms', 'allow-scripts'],
     reportUri: '/api/v1/csp',
