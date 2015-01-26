@@ -32,11 +32,11 @@ gulp.task('css', function() {
 
 
 
-// Copy gfx
+// Copy images
 
-gulp.task('gfx', function() {
-    return gulp.src('./src/gfx/**/*')
-        .pipe(gulp.dest('./public/gfx/'));
+gulp.task('img', function() {
+    return gulp.src('./src/img/**/*')
+        .pipe(gulp.dest('./public/img/'));
 });
 
 
@@ -60,4 +60,4 @@ gulp.task('fonts', function() {
 
 // The default task
 
-gulp.task('default', ['js', 'css', 'gfx', 'fonts', 'icon']);
+gulp.task('default', ['js', 'css', 'img', 'fonts', 'icon']);

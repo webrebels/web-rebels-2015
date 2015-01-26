@@ -1,6 +1,6 @@
 {
-  "name": "web-rebels-www",
-  "version": "0.1.0",
+  "name": "web-rebels-2015",
+  "version": "1.0.0-4",
   "author": {
     "name": "Web Rebels",
     "email": "kontor@webrebels.org"
@@ -44,7 +44,7 @@
     "url": "https://github.com/webrebels/web-rebels-2015/issues"
   },
   "licenses": [],
-  "subdomain": "webreb2015",
+  "subdomain": "wr2015",
   "domains": [
     "www.webrebels.org",
     "webrebels.org"
