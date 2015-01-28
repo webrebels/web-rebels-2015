@@ -489,6 +489,8 @@ All rules for font & font-size here only. */
 }
 
 .speaker-link {
+   display: -ms-flexbox;
+   display: -webkit-flex;
    display: flex;
    align-items: flex-end;
 }
@@ -526,7 +528,10 @@ li:nth-of-type(3n-1) .speaker-img {
 
 @media screen and (min-width: 600px) {
    .speakers {
+      display: -ms-flexbox;
+      display: -webkit-flex;
       display: flex;
+      -webkit-flex-wrap: wrap;
       flex-wrap: wrap;
    }
    .speaker {
@@ -544,8 +549,6 @@ li:nth-of-type(3n-1) .speaker-img {
 
 @media screen and (min-width: 1000px) {
    .speakers {
-      display: flex;
-      flex-wrap: wrap;
       justify-content: center;
    }
     .speaker {
