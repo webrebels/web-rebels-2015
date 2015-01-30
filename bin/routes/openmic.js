@@ -41,8 +41,8 @@ function sendMail(name, email, description, callback) {
         "from_email": "openmic@webrebels.org",
         "from_name": "Open Mic",
         "to": [{
-            "email": "kontor@webrebels.org",
-            "name": "Web Rebels",
+            "email": "openmic@webrebels.org",
+            "name": "Open Mic",
             "type": "to"
         }],
         "headers": {
