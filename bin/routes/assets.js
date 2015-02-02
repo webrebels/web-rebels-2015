@@ -5,6 +5,7 @@
 var browserify      = require('browserify'),
     CombinedStream  = require('combined-stream'),
     log             = require('../log.js'),
+    path            = require('path'),
     fs              = require('fs');
 
 
@@ -25,6 +26,7 @@ module.exports.appJs = function(req, res){
 module.exports.libCss = function(req, res){
     var combined = CombinedStream.create({pauseStreams: false});
     res.writeHead(200, {'Content-Type' : 'text/css'});
-    combined.append(fs.createReadStream('./public/src/css/style.css'));
+    combined.append(fs.createReadStream(path.resolve(__dirname, '../../src/fonts/ratherloud.css')));
+    combined.append(fs.createReadStream(path.resolve(__dirname, '../../src/css/styles.css')));
     combined.pipe(res);
 };

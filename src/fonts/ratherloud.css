@@ -19,12 +19,12 @@
 
 @font-face {
     font-family: 'RatherLoud';
-    src: url('RatherLoud-webfont.eot');
-    src: url('RatherLoud-webfont.eot?#iefix') format('embedded-opentype'),
-         url('RatherLoud-webfont.woff2') format('woff2'),
-         url('RatherLoud-webfont.woff') format('woff'),
-         url('RatherLoud-webfont.ttf') format('truetype'),
-         url('RatherLoud-webfont.svg#rather_loudbold') format('svg');
+    src: url('/fonts/RatherLoud-webfont.eot');
+    src: url('/fonts/RatherLoud-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/RatherLoud-webfont.woff2') format('woff2'),
+         url('/fonts/RatherLoud-webfont.woff') format('woff'),
+         url('/fonts/RatherLoud-webfont.ttf') format('truetype'),
+         url('/fonts/RatherLoud-webfont.svg#rather_loudbold') format('svg');
     font-weight: normal;
     font-style: normal;
 }

@@ -24,9 +24,9 @@ gulp.task('js', function() {
 // Minify CSS
 
 gulp.task('css', function() {
-    return gulp.src(['src/css/styles.css'])
+    return gulp.src(['src/fonts/ratherloud.css', 'src/css/styles.css'])
         .pipe(minifyCSS({removeEmpty : true}))
-        .pipe(concat('styles.css'))
+        .pipe(concat('app.css'))
         .pipe(gulp.dest('./public/css/'));
 });
 
