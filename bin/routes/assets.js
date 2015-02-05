@@ -14,7 +14,7 @@ var browserify      = require('browserify'),
 
 module.exports.appJs = function(req, res){
     res.writeHead(200, {'Content-Type' : 'application/javascript'});
-    browserify('./src/js/init.js')
+    browserify(fs.createReadStream(path.resolve(__dirname, '../../src/js/script.js')))
         .bundle()
         .pipe(res);
 };

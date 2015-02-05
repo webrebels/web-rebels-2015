@@ -54,7 +54,8 @@
     "gulp-concat": "latest",
     "gulp-minify-css": "latest",
     "gulp-uglify": "latest",
-    "jshint": "latest"
+    "jshint": "latest",
+    "picturefill": "2.x"
   },
   "dependencies": {
     "body": "4.x",
