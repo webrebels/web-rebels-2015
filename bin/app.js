@@ -2,25 +2,26 @@
 
 "use strict";
 
-var path            = require('path'),
-    http            = require('http'),
-    config          = require('./config.js'),
-    log             = require('./log.js'),
+var path                = require('path'),
+    fs                  = require('fs'),
+    http                = require('http'),
+    config              = require('./config.js'),
+    log                 = require('./log.js'),
 
-    helmet          = require('helmet'),
-    express         = require('express'),
-    bodyParser      = require('body-parser'),
-    expressValidator= require('express-validator'),
-    compress        = require('compression')(),
-    serveStatic     = require('serve-static'),
-    hbs             = require('hbs'),
+    helmet              = require('helmet'),
+    express             = require('express'),
+    bodyParser          = require('body-parser'),
+    expressValidator    = require('express-validator'),
+    compress            = require('compression')(),
+    serveStatic         = require('serve-static'),
+    hbs                 = require('hbs'),
 
-    app             = express(),
+    app                 = express(),
 
-    middleSSL       = require('./middleware/ssl.js'),
-    routeCsp        = require('./routes/csp.js'),
-    openmic         = require('./routes/openmic.js'),
-    routeAssets     = require('./routes/assets.js');
+    middleSSL           = require('./middleware/ssl.js'),
+    routeCsp            = require('./routes/csp.js'),
+    openmic             = require('./routes/openmic.js'),
+    routeAssets         = require('./routes/assets.js');
 
 
 
@@ -28,6 +29,12 @@ var path            = require('path'),
 // Default concurrent sockets in node.js is 5. We need more!
 
 http.globalAgent.maxSockets = Infinity;
+
+
+
+// Read "fold css"
+
+var css = fs.readFileSync(path.resolve(__dirname, '..' + config.get('docRoot') + '/css/structure.css'), {encoding:'utf8'});
 
 
 
@@ -102,7 +109,6 @@ app.get('/admin/ping', function (req, res) {
 // Set up routes only used in development
 
 if (config.get('env') === 'development') {
-    app.get('/css/fold.css', routeAssets.foldCss);
     app.get('/css/app.css', routeAssets.appCss);
     app.get('/js/app.js', routeAssets.appJs);
 }
@@ -114,83 +120,99 @@ if (config.get('env') === 'development') {
 app.get('/', function (req, res) {
     res.render('index', {
         pageTitle: 'Web Rebels ☠ Oslo ☠ 21-22 May 2015',
-        header: 'penthouse'
+        header: 'penthouse',
+        css: css
     });
 });
 app.get('/index', function (req, res) {
     res.render('index', {
-        pageTitle: 'Web Rebels ☠ Oslo ☠ 21-22 May 2015'
+        pageTitle: 'Web Rebels ☠ Oslo ☠ 21-22 May 2015',
+        css: css
     });
 });
 app.get('/sponsors', function (req, res) {
     res.render('sponsors', {
-        pageTitle: 'Our sponsors without whom none of this would be possible ☠ Web Rebels ☠ Oslo 2015'
+        pageTitle: 'Our sponsors without whom none of this would be possible ☠ Web Rebels ☠ Oslo 2015',
+        css: css
     });
 });
 app.get('/sponsors/packages', function (req, res) {
     res.render('sponsorPackages', {
-        pageTitle: 'Sponsoring options for the Web Rebels Conference ☠ Oslo 2015'
+        pageTitle: 'Sponsoring options for the Web Rebels Conference ☠ Oslo 2015',
+        css: css
     });
 });
 app.get('/about', function (req, res) {
     res.render('about', {
-        pageTitle: 'About the Web Rebels Conference ☠ Oslo 2015'
+        pageTitle: 'About the Web Rebels Conference ☠ Oslo 2015',
+        css: css
     });
 });
 app.get('/videos', function (req, res) {
     res.render('videos', {
-        pageTitle: 'Videos from the Web Rebels Conference ☠ Oslo 2015'
+        pageTitle: 'Videos from the Web Rebels Conference ☠ Oslo 2015',
+        css: css
     });
 });
 app.get('/policies', function (req, res) {
     res.render('policies', {
-        pageTitle: 'Policies for the Web Rebels Web Rebels Conference ☠ Oslo 2015'
+        pageTitle: 'Policies for the Web Rebels Web Rebels Conference ☠ Oslo 2015',
+        css: css
     });
 });
 app.get('/tickets', function (req, res) {
     res.render('tickets', {
-        pageTitle: 'Tickets for the Web Rebels Web Rebels Conference ☠ Oslo 2015'
+        pageTitle: 'Tickets for the Web Rebels Web Rebels Conference ☠ Oslo 2015',
+        css: css
     });
 });
 app.get('/tickets/confirmation', function (req, res) {
     res.render('ticketConfirmation', {
-        pageTitle: 'Thank you for registering with the Web Rebels Conference ☠ Oslo 2015'
+        pageTitle: 'Thank you for registering with the Web Rebels Conference ☠ Oslo 2015',
+        css: css
     });
 });
 app.get('/location', function (req, res) {
     res.render('location', {
-        pageTitle: 'Location of the Web Rebels Web Rebels Conference ☠ Oslo 2015'
+        pageTitle: 'Location of the Web Rebels Web Rebels Conference ☠ Oslo 2015',
+        css: css
     });
 });
 app.get('/oslo', function (req, res) {
     res.render('oslo', {
         pageTitle: 'Oslo survival guide for the Web Rebels Web Rebels Conference ☠ Oslo 2015',
-        header: 'oslosurvival'
+        header: 'oslosurvival',
+        css: css
     });
 });
 app.get('/family', function (req, res) {
     res.render('family', {
-        pageTitle: 'Family guide for the Web Rebels Web Rebels Conference ☠ Oslo 2015'
+        pageTitle: 'Family guide for the Web Rebels Web Rebels Conference ☠ Oslo 2015',
+        css: css
     });
 });
 app.get('/openmic', function (req, res) {
     res.render('openmic', {
-        pageTitle: 'Open Mic Night at the Web Rebels Web Rebels Conference ☠ Oslo 2015'
+        pageTitle: 'Open Mic Night at the Web Rebels Web Rebels Conference ☠ Oslo 2015',
+        css: css
     });
 });
 app.get('/schedule', function (req, res) {
     res.render('schedule', {
-        pageTitle: 'Schedule for the Web Rebels Web Rebels Conference ☠ Oslo 2015'
+        pageTitle: 'Schedule for the Web Rebels Web Rebels Conference ☠ Oslo 2015',
+        css: css
     });
 });
 app.get('/speakers', function (req, res) {
     res.render('speakers', {
-        pageTitle: 'Speakers at the Web Rebels Web Rebels Conference ☠ Oslo 2015'
+        pageTitle: 'Speakers at the Web Rebels Web Rebels Conference ☠ Oslo 2015',
+        css: css
     });
 });
 app.get('/roadbook', function (req, res) {
     res.render('roadbook', {
-        pageTitle: 'Roadbook for the Web Rebels Web Rebels Conference speakers ☠ Oslo 2015'
+        pageTitle: 'Roadbook for the Web Rebels Web Rebels Conference speakers ☠ Oslo 2015',
+        css: css
     });
 });
 

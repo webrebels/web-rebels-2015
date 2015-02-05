@@ -25,12 +25,13 @@ gulp.task('js', function() {
 });
 
 
+
 // Minify CSS
 
 gulp.task('css-fold', function() {
-    return gulp.src(['src/fonts/ratherloud.css', 'src/css/structure.css'])
+    return gulp.src(['src/css/structure.css'])
         .pipe(minifyCSS({removeEmpty : true}))
-        .pipe(concat('fold.css'))
+        .pipe(concat('structure.css'))
         .pipe(gulp.dest('./public/css/'));
 });
 

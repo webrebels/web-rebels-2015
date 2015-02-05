@@ -6,9 +6,8 @@
     <title>{{pageTitle}}</title>
     <meta name="description" content="Web Rebels is a non-profit, community driven conference for everyone who loves developing applications and services using web technology.">
     {{> analytics}}
-    <link rel="stylesheet" href="/css/fold.css" />
-    <link rel="stylesheet" href="/css/app.css" />
-    <script>document.createElement( "picture" );</script>
+    <style>{{{css}}}</style>
+    <script>document.createElement('picture');</script>
     <script async="true" defer="true" src="/js/app.js"></script>
 </head>
 
@@ -17,6 +16,18 @@
 {{{body}}}
 
 {{> footer}}
+
+<script>
+    var cb = function() {
+        var l = document.createElement('link'); l.rel = 'stylesheet';
+        l.href = '/css/app.css';
+        var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
+    };
+    var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+        webkitRequestAnimationFrame || msRequestAnimationFrame;
+    if (raf) raf(cb);
+    else window.addEventListener('load', cb);
+</script>
 
 </body>
 </html>

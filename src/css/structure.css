@@ -1,5 +1,16 @@
 /* src/css/structure.css */
 
+@font-face {
+    font-family: "RatherLoud";
+    src: url("/fonts/RatherLoud-webfont.eot");
+    src: url("/fonts/RatherLoud-webfont.eot?#iefix") format("embedded-opentype"),
+         url("/fonts/RatherLoud-webfont.woff2") format("woff2"),
+         url("/fonts/RatherLoud-webfont.woff") format("woff"),
+         url("/fonts/RatherLoud-webfont.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
 
 /* Base 
 ------------------------------------------------------*/
@@ -134,7 +145,7 @@ And the front page has a swanky penthouse on top.
 /* specific interiors for fancier floors of the building above the fold */
 
 .penthouse {
-   background: #4F4F4A url("../img/bg-penthouse.svg") no-repeat 50% 100%;
+   background: #4F4F4A url("/img/bg-penthouse.svg") no-repeat 50% 100%;
    background-size: contain;
    min-height: 200px;
 }
@@ -288,7 +299,7 @@ And the front page has a swanky penthouse on top.
 /* chunk styles for tickes, openmic, about, previous, sponsors */
 
 .chunk-tickets {
-   background-image: url("../img/chunk-tickets.svg");
+   background-image: url("/img/chunk-tickets.svg");
    background-position: 95% 0;
    background-size: auto 140px;
 }
@@ -298,7 +309,7 @@ And the front page has a swanky penthouse on top.
 }
 
 .chunk-openmic {
-   background-image: url("../img/chunk-openmic.svg");
+   background-image: url("/img/chunk-openmic.svg");
    background-position: 95% 100%;
    background-size: auto 80px;
 }
@@ -308,7 +319,7 @@ And the front page has a swanky penthouse on top.
 }
 
 .chunk-about {
-   background-image: url("../img/chunk-webrebels.svg");
+   background-image: url("/img/chunk-webrebels.svg");
    background-position: 0px 0px;
    background-size: auto 60px;
    background-position: 97% 100%;
@@ -319,7 +330,7 @@ And the front page has a swanky penthouse on top.
 }
 
 .chunk-lookingback {
-   background-image: url("../img/chunk-lookingback.svg");
+   background-image: url("/img/chunk-lookingback.svg");
    background-position: 10px 10px;
    background-size: auto 50px;
 }
@@ -329,7 +340,7 @@ And the front page has a swanky penthouse on top.
 }
 
 .chunk-sponsors {
-   background-image: url("../img/chunk-sponsors.svg");
+   background-image: url("/img/chunk-sponsors.svg");
    background-size: auto 60px;
    background-position: 95% 10px;
 }

@@ -23,15 +23,6 @@ module.exports.appJs = function(req, res){
 
 // Concatinate and serve CSS
 
-module.exports.foldCss = function(req, res){
-    var combined = CombinedStream.create({pauseStreams: false});
-    res.writeHead(200, {'Content-Type' : 'text/css'});
-    combined.append(fs.createReadStream(path.resolve(__dirname, '../../src/fonts/ratherloud.css')));
-    combined.append(fs.createReadStream(path.resolve(__dirname, '../../src/css/structure.css')));
-    combined.pipe(res);
-};
-
-
 module.exports.appCss = function(req, res){
     var combined = CombinedStream.create({pauseStreams: false});
     res.writeHead(200, {'Content-Type' : 'text/css'});
