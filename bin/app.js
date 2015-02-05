@@ -107,6 +107,8 @@ if (config.get('env') === 'development') {
     app.get('/js/app.js', routeAssets.appJs);
 }
 
+
+
 // Set http routes
 
 app.get('/', function (req, res) {

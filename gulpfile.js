@@ -6,19 +6,23 @@
 var gulp        = require('gulp'),
     concat      = require('gulp-concat'),
     uglify      = require('gulp-uglify'),
-    minifyCSS   = require('gulp-minify-css');
+    minifyCSS   = require('gulp-minify-css'),
+    browserify  = require('browserify'),
+    source      = require('vinyl-source-stream'),
+    buffer      = require('vinyl-buffer');
 
 
 
 // Minify JS
 
 gulp.task('js', function() {
-    return gulp.src(['src/js/script.js'])
+    return browserify('./src/js/script.js')
+        .bundle()
+        .pipe(source('app.js'))
+        .pipe(buffer())
         .pipe(uglify({outSourceMap: false}))
-        .pipe(concat('script.js'))
         .pipe(gulp.dest('./public/js/'));
 });
-
 
 
 // Minify CSS

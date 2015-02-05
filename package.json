@@ -55,6 +55,8 @@
     "gulp-minify-css": "latest",
     "gulp-uglify": "latest",
     "jshint": "latest",
+    "vinyl-buffer": "latest",
+    "vinyl-source-stream": "latest",
     "picturefill": "2.x"
   },
   "dependencies": {
