@@ -23,8 +23,15 @@ gulp.task('js', function() {
 
 // Minify CSS
 
-gulp.task('css', function() {
-    return gulp.src(['src/fonts/ratherloud.css', 'src/css/styles.css'])
+gulp.task('css-fold', function() {
+    return gulp.src(['src/fonts/ratherloud.css', 'src/css/structure.css'])
+        .pipe(minifyCSS({removeEmpty : true}))
+        .pipe(concat('fold.css'))
+        .pipe(gulp.dest('./public/css/'));
+});
+
+gulp.task('css-app', function() {
+    return gulp.src(['src/css/styles.css'])
         .pipe(minifyCSS({removeEmpty : true}))
         .pipe(concat('app.css'))
         .pipe(gulp.dest('./public/css/'));
@@ -60,4 +67,4 @@ gulp.task('fonts', function() {
 
 // The default task
 
-gulp.task('default', ['js', 'css', 'img', 'fonts', 'icon']);
+gulp.task('default', ['js', 'css-fold', 'css-app', 'img', 'fonts', 'icon']);
