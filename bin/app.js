@@ -102,7 +102,8 @@ app.get('/admin/ping', function (req, res) {
 // Set up routes only used in development
 
 if (config.get('env') === 'development') {
-    app.get('/css/app.css', routeAssets.libCss);
+    app.get('/css/fold.css', routeAssets.foldCss);
+    app.get('/css/app.css', routeAssets.appCss);
     app.get('/js/app.js', routeAssets.appJs);
 }
 
