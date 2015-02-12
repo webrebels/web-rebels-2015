@@ -352,6 +352,15 @@ And the front page has a swanky penthouse on top.
 
 }
 
+.chunk-location {
+   background-image: url("/img/chunk-location.svg");
+   background-size: auto 70px;
+   background-position: 95% 100%;
+}
+.chunk-location .chunk-linkbox {
+  padding-bottom: 50px;
+}
+
 @media screen and (min-width: 800px) {
    .chunk {
       margin-bottom: 30px;
@@ -406,5 +415,13 @@ And the front page has a swanky penthouse on top.
    }
    .chunk-sponsors .chunk-linkbox {
 
+   }
+   .chunk-location {
+      background-size: auto 140px;
+      background-position: 97% 100%;
+   }
+   .chunk-location .chunk-linkbox {
+      padding-bottom: 0.75em;
+      padding-right: 90px;
    }
 }
