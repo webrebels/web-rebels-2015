@@ -273,8 +273,9 @@ li:nth-of-type(3n-1) .speaker-img {
 .openmicform textarea {
    border: 2px solid #ccc;
    padding: 1em;
-   width: 95%;
+   width: 100%;
    margin: 0 auto 1em auto;
+   box-sizing: border-box;
 }
 
 .openmicform input.btn {
@@ -282,6 +283,7 @@ li:nth-of-type(3n-1) .speaker-img {
 	background-color: #aaa;
 	border: 0;
 	float: right;
+	cursor: pointer;
 }
 
 .openmicform input.btn:hover {
