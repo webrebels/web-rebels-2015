@@ -187,11 +187,19 @@ li:nth-of-type(3n-1) .speaker-img {
    list-style-type: none;
    padding-left: 0;
    margin-right: -5px;
+   display: -ms-flexbox;
+   display: -webkit-flex;
+   display: flex;
+   -webkit-flex-wrap: wrap;
+   flex-wrap: wrap;
+   -webkit-justify-content: center;
+   justify-content: center;
+   -webkit-align-items: center; 
+   align-items: flex-end;
 }
 
 .sponsors li {
    text-align: center;
-   float: left;
    width: 25%;
 }
 
@@ -225,6 +233,24 @@ li:nth-of-type(3n-1) .speaker-img {
       border: 6px solid #F2F2F2;
    }
 }
+
+.featured {
+   background-color: #fff;
+   color: #777;
+   font-family: Arial, sans-serif;
+   font-size: 10px;
+   text-transform: uppercase;
+   letter-spacing: 2px;
+   line-height: 24px;
+   display: block;
+   margin-bottom: 10px;
+   padding-right: 20px;
+}
+
+.sponsors .featured + a {
+	margin-top: -12px;
+}
+
 
 
 /* Open Mic request */
