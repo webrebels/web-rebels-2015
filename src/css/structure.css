@@ -257,12 +257,15 @@ And the front page has a swanky penthouse on top.
       width: 48.5%;
       float: left;
    }
+   .gridone-a {
+      margin-right: 3%;
+   }
+   .gridone-b {
+      clear: right;
+   }
    .gridtwo {
       width: 100%;
       float: left;
-   }
-   .mr {
-      margin-right: 3%;
    }
 }
 
