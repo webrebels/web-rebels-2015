@@ -194,7 +194,7 @@ li:nth-of-type(3n-1) .speaker-img {
    flex-wrap: wrap;
    -webkit-justify-content: center;
    justify-content: center;
-   -webkit-align-items: center; 
+   -webkit-align-items: flex-end; 
    align-items: flex-end;
 }
 
