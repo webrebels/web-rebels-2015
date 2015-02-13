@@ -76,7 +76,7 @@ app.use(helmet.csp({
     scriptSrc: ["'self'", "'unsafe-inline'", "www.google-analytics.com", "ssl.google-analytics.com"],
     styleSrc: ["'self'", "'unsafe-inline'"],
     imgSrc: ["'self'", "data:", "server.arcgisonline.com", "ssl.google-analytics.com"],
-    frameSrc: ["'self'", "eventbrite.com,"],
+    frameSrc: ["eventbrite.com", "www.eventbrite.com"],
     fontSrc: ["'self'"],
     connectSrc: ["*"],
     sandbox: ['allow-forms', 'allow-scripts'],
