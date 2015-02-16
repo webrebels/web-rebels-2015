@@ -216,6 +216,12 @@ app.get('/roadbook', function (req, res) {
         css: css
     });
 });
+app.get('/scholarship', function (req, res) {
+    res.render('scholarship', {
+        pageTitle: 'Web Rebels Scholarship Programme Web Rebels Conference ☠ Oslo 2015',
+        css: css
+    });
+});
 
 
 
