@@ -16,13 +16,15 @@ module.exports = function(req, res){
     req.assert('email', 'Email is empty').notEmpty();
     req.assert('email', 'Email is invalid.').isEmail();
 
+    req.assert('country', 'Country is empty.').notEmpty();
+
     req.assert('application', 'Application is empty').notEmpty();
 
     var errors = req.validationErrors();
     if (errors) {
         renderWithMessage(res, errors);
     } else {
-        sendMail(req.param('name'), req.param('email'), req.param('application'), function sendingOk(err) {
+        sendMail(req.param('name'), req.param('email'), req.param('application'), req.param('country'), function sendingOk(err) {
             if(err) {
                 renderWithMessage(res, {msg: 'Sorry we had trouble sending your email. Please try again at a later time.'});
             } else {
@@ -33,9 +35,10 @@ module.exports = function(req, res){
     }
 };
 
-function sendMail(name, email, application, callback) {
+function sendMail(name, email, application, country, callback) {
     var content =   "Name: " + name + "\n" +
                     "Email: " + email + "\n" +
+                    "Country: " + country + "\n" +
                     "Pitch: " + application + "\n";
     var message = {
         "text": content,
@@ -60,6 +63,7 @@ function sendMail(name, email, application, callback) {
         log.info("Scholarship email failed. " +
             "Name: " + name +
             " Email: " + email +
+            " Country: " + country +
             " Description: " + application + ".");
         // Mandrill returns the error as an object with name and message keys
         log.error('A mandrill error occurred: ' + e.name + ' - ' + e.message);
