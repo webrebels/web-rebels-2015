@@ -43,7 +43,7 @@ function sendMail(name, email, description, callback) {
         "from_email": "openmic@webrebels.org",
         "from_name": "Open Mic",
         "to": [{
-            "email": "openmic@webrebels.org",
+            "email": "openmic@andersos.net",
             "name": "Open Mic",
             "type": "to"
         }],
