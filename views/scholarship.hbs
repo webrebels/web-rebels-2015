@@ -45,9 +45,30 @@
     <a name="award"></a>
     <h2>Application</h2>
     <p>
-      You can apply by completing the form <a href="fill-this-out-pls">here</a>
-      by **insert-date-here-pls**.
+      You can apply by completing the form by **insert-date-here-pls**.
     </p>
+    <div class="openmicform group">
+    <h2>Apply for Web Rebels Scholarship</h2>
+    {{# errors}}
+    <p style="color: black; background-color: #f2dede; padding: 15px;">{{msg}}</p>
+    {{/ errors}}
+    {{# success}}
+    <p style="color: black; background-color: #dff0d8; padding: 15px;">{{msg}}</p>
+    {{/ success}}
+    <form action="/api/v1/scholarship" method="post">
+
+            <label for="name" class="notsoloud">Full name</label>
+            <input type="text" name="name" id="name" required>
+
+            <label for="email" class="notsoloud">Email Address</label>
+            <input type="email" name="email" id="email" required>
+
+            <label for="description" class="notsoloud">Application</label>
+            <textarea name="description" id="description" required></textarea>
+
+            <input type="submit" class="btn">
+    </form>
+    </div>
     <p>
       All applicants will be notified via email by
       **insert-date-here-pls-kthx**. If your application is accepted,
