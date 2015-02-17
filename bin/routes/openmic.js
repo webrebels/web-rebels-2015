@@ -3,6 +3,8 @@
 "use strict";
 
 var config          = require('../config.js'),
+    fs              = require('fs'),
+    path            = require('path'),
     log             = require('../log.js'),
     mandrill        = require('mandrill-api/mandrill'),
     mandrill_client = new mandrill.Mandrill(config.get('mandrillApiKey'));
@@ -69,6 +71,10 @@ function renderWithMessage(res, error, success) {
     res.render('openmic', {
         pageTitle: 'Open Mic Night at the Web Rebels Web Rebels Conference ☠ Oslo 2015',
         errors: error,
-        success: success
+        success: success,
+        css: fs.readFileSync(path.resolve(__dirname, '../../' + config.get('docRoot') + '/css/structure.css'), {encoding:'utf8'})
     });
 }
+
+
+
