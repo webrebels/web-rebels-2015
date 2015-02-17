@@ -71,7 +71,7 @@
     "hbs": "2.x",
     "helmet": "0.6.x",
     "mandrill-api": "1.0.41",
-    "serve-static": "1.8.x",
+    "serve-static": "1.9.x",
     "winston": "0.9.x"
   }
 }
