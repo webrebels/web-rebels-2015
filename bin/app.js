@@ -21,6 +21,7 @@ var path                = require('path'),
     middleSSL           = require('./middleware/ssl.js'),
     routeCsp            = require('./routes/csp.js'),
     openmic             = require('./routes/openmic.js'),
+    scholarship         = require('./routes/scholarship.js'),
     routeAssets         = require('./routes/assets.js');
 
 
@@ -97,6 +98,7 @@ app.use(bodyParser.urlencoded({
 }));
 app.use(expressValidator());
 app.post('/api/v1/openmic', openmic);
+app.post('/api/v1/scholarship', scholarship);
 
 
 // Ping route for external monitoring
@@ -213,6 +215,12 @@ app.get('/speakers', function (req, res) {
 app.get('/roadbook', function (req, res) {
     res.render('roadbook', {
         pageTitle: 'Roadbook for the Web Rebels Web Rebels Conference speakers ☠ Oslo 2015',
+        css: css
+    });
+});
+app.get('/scholarship', function (req, res) {
+    res.render('scholarship', {
+        pageTitle: 'Web Rebels Scholarship Programme Web Rebels Conference ☠ Oslo 2015',
         css: css
     });
 });

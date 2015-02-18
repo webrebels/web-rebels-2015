@@ -361,6 +361,15 @@ And the front page has a swanky penthouse on top.
   padding-bottom: 50px;
 }
 
+.chunk-schedule {
+   background-image: url("/img/chunk-schedule.svg");
+   background-size: auto 60px;
+   background-position: 95% 10px;
+}
+.chunk-schedule .chunk-linkbox {
+
+}
+
 @media screen and (min-width: 800px) {
    .chunk {
       margin-bottom: 30px;
@@ -410,18 +419,28 @@ And the front page has a swanky penthouse on top.
    .chunk-sponsors {
       background-size: auto 140px;
       background-position: 100% 0;
-      padding-top: 40px;
-      margin-top: -40px;
+      padding-top: 30px;
+      margin-top: -30px;
    }
    .chunk-sponsors .chunk-linkbox {
 
    }
    .chunk-location {
-      background-size: auto 140px;
+      background-size: auto 150px;
       background-position: 97% 100%;
    }
    .chunk-location .chunk-linkbox {
       padding-bottom: 0.75em;
       padding-right: 90px;
+   }
+   .chunk-schedule {
+      background-image: url("/img/chunk-schedule.svg");
+      background-size: auto 120px;
+      background-position: 100% 0;
+      padding-top: 40px;
+      margin-top: -40px;
+   }
+   .chunk-schedule .chunk-linkbox {
+   
    }
 }
