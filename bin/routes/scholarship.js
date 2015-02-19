@@ -39,7 +39,7 @@ function sendMail(name, email, application, country, callback) {
     var content =   "Name: " + name + "\n" +
                     "Email: " + email + "\n" +
                     "Country: " + country + "\n" +
-                    "Pitch: " + application + "\n";
+                    "Application: " + application + "\n";
     var message = {
         "text": content,
         "subject": "Scholarship Application " + name,
