@@ -296,6 +296,38 @@ li:nth-of-type(3n-1) .speaker-img {
    }
 }
 
+
+/* menuthingy on pages Oslo and Family */
+
+.survivalmenu {
+  list-style-type: none;
+  clear: both; 
+  padding-left: 0;
+  margin-left: -0.5em;
+}
+
+.survivalmenu-item {
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+.survivalmenu-item a {
+  display: block;
+  padding: 0 0.075em;
+  margin-bottom: 0;
+}
+
+.survivalmenu-item:nth-of-type(even) a {
+  color: #A0A09D;
+}
+
+.survivalmenu-item a:hover,
+.survivalmenu-item a:active {
+  color: #444;
+  transition: all 0.1s ease-in 0s;
+}
+
+
 /* Navigation in footer */
 
 .menu {
