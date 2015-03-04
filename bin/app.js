@@ -67,7 +67,8 @@ app.set('views', path.resolve(__dirname, '../views/'));
 
 app.use(helmet.hsts({
     maxAge              : 15724800000,  // 26 weeks
-    includeSubdomains   : true
+    includeSubdomains   : true,
+    preload             : true
 }));
 
 app.use(helmet.frameguard('deny'));
