@@ -240,17 +240,23 @@ li:nth-of-type(3n-1) .speaker-img {
    font-family: Arial, sans-serif;
    font-size: 10px;
    text-transform: uppercase;
-   letter-spacing: 2px;
-   line-height: 24px;
+   line-height: 1.2;
    display: block;
    margin-bottom: 10px;
-   padding-right: 20px;
+   padding-bottom: 5px;
 }
 
 .sponsors .featured + a {
 	margin-top: -12px;
 }
 
+@media screen and (min-width: 1000px) { 
+  .featured {
+     letter-spacing: 2px;
+     padding-right: 20px;
+     padding-bottom: 10px;
+  }
+}
 
 
 /* Open Mic request */
