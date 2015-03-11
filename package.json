@@ -1,6 +1,6 @@
 {
   "name": "web-rebels-2015",
-  "version": "1.0.0-35",
+  "version": "1.0.0-36",
   "author": {
     "name": "Web Rebels",
     "email": "kontor@webrebels.org"
@@ -62,7 +62,7 @@
   "dependencies": {
     "body": "5.x",
     "body-parser": "1.x",
-    "browserify": "8.x",
+    "browserify": "9.x",
     "combined-stream": "0.0.x",
     "compression": "1.x",
     "convict": "0.6.x",
