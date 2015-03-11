@@ -68,8 +68,8 @@
     "convict": "0.6.x",
     "express": "4.x",
     "express-validator": "^2.8.0",
-    "hbs": "2.x",
-    "helmet": "0.6.x",
+    "hbs": "3.x",
+    "helmet": "0.7.x",
     "mandrill-api": "1.0.41",
     "serve-static": "1.9.x",
     "winston": "0.9.x"
