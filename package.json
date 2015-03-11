@@ -1,6 +1,6 @@
 {
   "name": "web-rebels-2015",
-  "version": "1.0.0-37",
+  "version": "2.0.0",
   "author": {
     "name": "Web Rebels",
     "email": "kontor@webrebels.org"
@@ -38,7 +38,7 @@
     }
   ],
   "engines": {
-    "node": "0.10.x"
+    "node": "0.12.x"
   },
   "bugs": {
     "url": "https://github.com/webrebels/web-rebels-2015/issues"
