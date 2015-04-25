@@ -67,11 +67,11 @@
     "compression": "1.x",
     "convict": "0.6.x",
     "express": "4.12.x",
-    "express-validator": "^2.8.0",
+    "express-validator": "2.8.x",
     "hbs": "3.x",
-    "helmet": "0.7.x",
-    "mandrill-api": "1.0.41",
+    "helmet": "0.9.x",
+    "mandrill-api": "1.0.x",
     "serve-static": "1.9.x",
-    "winston": "0.9.x"
+    "winston": "1.0.x"
   }
 }
