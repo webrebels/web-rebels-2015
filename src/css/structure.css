@@ -85,6 +85,17 @@ h1, h2, h3 {
    visibility: hidden;
 }
 
+/* clearfix */
+.cf {
+    content:"";
+    display:table;
+    clear:both;
+}
+
+.block {
+  clear: both;
+}
+
 article {
    border-top: 2px solid #efefed;
    padding-top: 1em;
