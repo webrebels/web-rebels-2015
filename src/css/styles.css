@@ -60,6 +60,15 @@
    padding: 2px;
 }
 
+/*
+We want responsive line breaks. More about this technique
+here: danielmall.com/articles/responsive-line-breaks */
+
+@media screen and (min-width: 900px) {
+   .rwd-line {
+      display: block;
+   }
+}
 
 
 /* Rest of the modules
