@@ -225,6 +225,12 @@ app.get('/scholarship', function (req, res) {
         css: css
     });
 });
+app.get('/pressemelding', function (req, res) {
+    res.render('press', {
+        pageTitle: 'Web Rebels Pressemelding ☠ Oslo 2015',
+        css: css
+    });
+});
 
 
 
