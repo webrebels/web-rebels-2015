@@ -50,7 +50,7 @@ app.enable('trust proxy');
 
 app.use(middleSSL.ensure);
 app.use(compress);
-app.use(serveStatic(path.resolve(__dirname, '..' + config.get('docRoot')), {maxAge: '1d'}));
+app.use(serveStatic(path.resolve(__dirname, '..' + config.get('docRoot')), {maxAge: '30d'}));
 
 
 
