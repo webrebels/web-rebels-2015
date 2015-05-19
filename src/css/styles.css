@@ -268,6 +268,61 @@ li:nth-of-type(3n-1) .speaker-img {
 }
 
 
+/* The conference schedule */
+
+.schedule {
+   width: 100%;
+   margin-bottom: 3em;
+   border-collapse: collapse;
+   border-top: 4px solid #525251;
+   border-bottom: 4px solid #525251;
+}
+
+.schedule p {
+   margin-bottom: 0;
+}
+
+.schedule th {
+   padding: 0.5em 1em;
+   vertical-align: text-top;
+}
+
+.schedule td {
+   vertical-align: text-top;
+
+}
+
+.schedule-break {
+   border-top: 2px solid #efefed;
+   border-bottom: 2px solid #efefed;
+   color: #8A8A86;  
+}
+
+.schedule-break > td {
+   padding: 0.5em 1em; 
+   font-style: italic;
+}
+
+.schedule-talk > td {
+   padding-left: 1em;
+}
+
+.schedule-link {
+   display: block;
+   padding: 0.5em 1em;
+   margin-left: -1em;
+}
+
+a.schedule-link {
+   color: #3C3C36;
+}
+
+.schedule-link:hover {
+   background-color: #efefed;
+   transition: background 0.1s ease-in 0s;
+}
+
+
 /* Open Mic request */
 
 .openmicform {
