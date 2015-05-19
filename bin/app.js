@@ -73,12 +73,15 @@ app.use(helmet.hsts({
 
 app.use(helmet.frameguard('deny'));
 
+
+
 app.use(helmet.csp({
     defaultSrc: ["'none'"],
-    scriptSrc: ["'self'", "'unsafe-inline'", "www.google-analytics.com", "ssl.google-analytics.com"],
+    scriptSrc: ["'self'", "data:", "'unsafe-inline'", "'unsafe-eval'", "www.google-analytics.com", "ssl.google-analytics.com", "professional.player.qbrick.com", "publisher.qbrick.com"],
     styleSrc: ["'self'", "'unsafe-inline'"],
     imgSrc: ["'self'", "data:", "server.arcgisonline.com", "ssl.google-analytics.com"],
     frameSrc: ["eventbrite.com", "www.eventbrite.com"],
+    objectSrc: ["'self'", "professional.player.qbrick.com"],
     fontSrc: ["'self'"],
     connectSrc: ["*"],
     sandbox: ['allow-forms', 'allow-scripts'],
