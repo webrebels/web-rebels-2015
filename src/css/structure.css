@@ -213,6 +213,11 @@ And the front page has a swanky penthouse on top.
 }
 
 
+.video-thanks {
+  margin-bottom: 0;
+  font-style: italic;
+}
+
 
 /* Colours
 ------------------------------------------------------*/
@@ -465,6 +470,25 @@ And the front page has a swanky penthouse on top.
 
 
 /* Video player */
+
+.video {
+  display: none; 
+}
+
+@media screen and (min-width: 900px) { 
+   .video {
+      display: block;     
+   }
+}
+
+.video-box {
+   box-sizing: border-box;
+   border-width: 6px;
+   border-style: solid;
+   border-color: inherit;
+   display: block;
+   padding: 1em 1em 0.25em 1em;  
+}
 
 #qbrick_professional_qbrick1 {
   width: 952px    !important;
