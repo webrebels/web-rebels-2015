@@ -1,47 +1,8 @@
 <div class="floor">
   <div class="inner-nrw">
-<h1 class="ratherloud-heading">Open Mic Night</h1>
-
-<h2>Wednesday 20th May</h2>
-<p>The evening before the conference, we will be hanging out at <a href="http://vbarogbistro.no/">V Bar</a>, right next door to the <a href="./location">venue</a>. This is the conference pre-party, so come say hello to other attendees, speakers and volunteers.</p>
-
-<h2>Warm up with lightning talks</h2>
-<p>We want to create a friendly environment where attendees can have a go at speaking. There will be batches of 10 minute lightning talks in an informal setting for a smaller audience. Slides are completely optional! And live coding only if your really want to.</p>
-
-
-<h2>First time speakers very welcome</h2>
-<p>If you have never delivered a talk before, remember that there is a first time for everything. There was a first time you touched a keyboard, and a first time you wrote "hello world". This is the perfect opportunity grab the mic for the first time and share some thoughts.</p>
-
-<div class="openmicform group">
-<h2>Submit a talk for Open Mic Night!</h2>
-<p>~10 minutes talks on any relevant topic. Only attendees with a conference ticket, please.</p>
-{{# errors}}
-<p style="color: black; background-color: #f2dede; padding: 15px;">{{msg}}</p>
-{{/ errors}}
-{{# success}}
-<p style="color: black; background-color: #dff0d8; padding: 15px;">{{msg}}</p>
-{{/ success}}
-<form action="/api/v1/openmic" method="post">
-
-        <label for="name" class="notsoloud">Full name</label>
-        <input type="text" name="name" id="name" required>
-
-        <label for="email" class="notsoloud">Email Address</label>
-        <input type="email" name="email" id="email" required>
-
-        <label for="description" class="notsoloud">Describe your talk</label>
-        <textarea name="description" id="description" required></textarea>
-
-        <input type="submit" class="btn">
-</form>
-</div>
-
-<h2 class="ratherloud-heading">More details</h2>
-<ul>
-<li>this year, you do need a conference ticket to submit a lightning talk</li>
-<li>equipment at the Open Mic venue includes a projector, microphone and Wi-Fi</li>
-<li>if you don't have a device to do a presentation, let us know and we'll sort it out</li>
-</ul>
-
-</div>
+<h1 class="ratherloud-heading">Open Mic Night - Wednesday 20 May</h1>
+<p>Pre-conference party with <a href="/openmic">Open Mic</a> sessions at the <a href="http://vbarogbistro.no/">V Bar &amp; Restaurant</a>.
+    During this evening you can exchange your ticket into the conference pass, giving you more time to focus on breakfast than queuing for access on Thursday morning. Nice eh?</p>
+    {{> openmicschedule}}
+    </div>
 </div>
