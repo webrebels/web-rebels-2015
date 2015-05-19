@@ -246,6 +246,7 @@ And the front page has a swanky penthouse on top.
 
 }
 
+
 @media screen and (min-width: 1000px) {
   .logo {
       width: 400px;
@@ -385,6 +386,7 @@ And the front page has a swanky penthouse on top.
 
 }
 
+
 @media screen and (min-width: 800px) {
    .chunk {
       margin-bottom: 30px;
@@ -458,4 +460,13 @@ And the front page has a swanky penthouse on top.
    .chunk-schedule .chunk-linkbox {
    
    }
+}
+
+
+
+/* Video player */
+
+#qbrick_professional_qbrick1 {
+  width: 952px    !important;
+  height: 536px   !important;
 }
