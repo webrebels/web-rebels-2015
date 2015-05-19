@@ -18,7 +18,7 @@
   margin-bottom: 0;
 }
 
-@media screen and (min-width: 1000px) { 
+@media screen and (min-width: 1000px) {
    .whereSponsorsLive {
      background: #fff url("../img/bg-sponsors.svg") 50% 0;
      padding: 2em 0 0 0;
@@ -26,7 +26,7 @@
 }
 
 .cellar .inner {
-  padding: 2em 0 1em 0;    
+  padding: 2em 0 1em 0;
 }
 
 /* Typography below the fold
@@ -42,7 +42,7 @@
 .btn {
    font-family: Arial, sans-serif;
    font-size: 18px;
-   font-weight: bold;	
+   font-weight: bold;
 }
 
 /* tiny type tweeks */
@@ -203,7 +203,7 @@ li:nth-of-type(3n-1) .speaker-img {
    flex-wrap: wrap;
    -webkit-justify-content: center;
    justify-content: center;
-   -webkit-align-items: flex-end; 
+   -webkit-align-items: flex-end;
    align-items: flex-end;
 }
 
@@ -228,7 +228,7 @@ li:nth-of-type(3n-1) .speaker-img {
    border-color: #D3D3D3;
 }
 
-@media screen and (min-width: 1000px) { 
+@media screen and (min-width: 1000px) {
    .sponsors {
       margin-right: -20px;
    }
@@ -259,7 +259,7 @@ li:nth-of-type(3n-1) .speaker-img {
 	margin-top: -12px;
 }
 
-@media screen and (min-width: 1000px) { 
+@media screen and (min-width: 1000px) {
   .featured {
      letter-spacing: 2px;
      padding-right: 20px;
@@ -302,10 +302,10 @@ li:nth-of-type(3n-1) .speaker-img {
 }
 
 .openmicform input.btn:hover {
-	background-color: #688C84;	
+	background-color: #688C84;
 }
 
-@media screen and (min-width: 800px) { 
+@media screen and (min-width: 800px) {
    .openmicform {
    	padding: 2em;
    }
@@ -316,7 +316,7 @@ li:nth-of-type(3n-1) .speaker-img {
 
 .survivalmenu {
   list-style-type: none;
-  clear: both; 
+  clear: both;
   padding-left: 0;
   margin-left: -0.5em;
 }
@@ -347,7 +347,7 @@ li:nth-of-type(3n-1) .speaker-img {
 
 .menu {
    list-style-type: none;
-   clear: both; 
+   clear: both;
    padding-left: 0;
 }
 
@@ -376,6 +376,63 @@ li:nth-of-type(3n-1) .speaker-img {
    position: relative;
    left: 1em;
    margin-bottom: 0.5em;
+}
+
+/* The conference schedule */
+
+.schedule {
+   width: 100%;
+   margin-bottom: 3em;
+   border-collapse: collapse;
+   border-top: 4px solid #525251;
+   border-bottom: 4px solid #525251;
+}
+
+.schedule p {
+   margin-bottom: 0;
+}
+
+.schedule th {
+   padding: 0.5em 1em;
+   vertical-align: text-top;
+}
+
+.schedule td {
+   vertical-align: text-top;
+}
+
+.schedule-break {
+   border-top: 2px solid #efefed;
+   border-bottom: 2px solid #efefed;
+   color: #8A8A86;
+}
+
+.schedule-break > td {
+   padding: 0.5em 1em;
+   font-style: italic;
+}
+
+.schedule-talk {
+
+}
+
+.schedule-talk > td {
+    padding-left: 1em;
+}
+
+.schedule-link {
+   display: block;
+   padding: 0.5em 1em;
+   margin-left: -1em;
+}
+
+a.schedule-link {
+   color: #3C3C36;
+}
+
+.schedule-link:hover {
+   background-color: #efefed;
+   transition: background 0.1s ease-in 0s;
 }
 
 
