@@ -502,5 +502,23 @@ a.schedule-link {
   margin-bottom: 1em;
 }
 
+.videos p {
+  color: #3C3C36;
+}
+
+@media screen and (min-width: 800px) {
+   .videos {
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-wrap: wrap;
+      flex-wrap: wrap;
+   }
+   .videos li {
+      width: 50%;
+      margin: 0;
+   }
+}
+
 
 /* the end */
