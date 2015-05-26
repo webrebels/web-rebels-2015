@@ -491,5 +491,16 @@ a.schedule-link {
 }
 
 
+/* fancy video list */
+
+.videos {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.videos li {
+  margin-bottom: 1em;
+}
+
 
 /* the end */
