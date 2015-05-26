@@ -499,11 +499,12 @@ a.schedule-link {
 }
 
 .videos li {
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
 }
 
 .videos p {
   color: #3C3C36;
+  max-width: 75%;
 }
 
 @media screen and (min-width: 800px) {
@@ -516,7 +517,6 @@ a.schedule-link {
    }
    .videos li {
       width: 50%;
-      margin: 0;
    }
 }
 
