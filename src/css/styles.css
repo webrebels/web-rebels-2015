@@ -496,6 +496,9 @@ a.schedule-link {
 .videos {
   list-style-type: none;
   padding-left: 0;
+  border-top: 6px solid #525251;
+  margin-top: 20px;
+  padding-top: 40px;
 }
 
 .videos li {
