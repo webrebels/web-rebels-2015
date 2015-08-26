@@ -1,0 +1,682 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <title>Family guide for the Web Rebels Web Rebels Conference ☠ Oslo 2015</title>
+    <meta property="og:title" content="Family guide for the Web Rebels Web Rebels Conference ☠ Oslo 2015" />
+    <meta property="og:type" content="website" />
+    <!--meta property="og:url" content="" /-->
+    <meta property="og:image" content="https://www.webrebels.org/img/classof2014.jpg" />
+    <meta property="og:description" content="Web Rebels is a non-profit, community driven conference for everyone who loves developing applications and services using web technology." />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@web_rebels" />
+    <meta name="twitter:title" content="Family guide for the Web Rebels Web Rebels Conference ☠ Oslo 2015" />
+    <meta name="twitter:description" content="Web Rebels is a non-profit, community driven conference for everyone who loves developing applications and services using web technology.">
+    <meta name="twitter:image" content="https://www.webrebels.org/img/classof2014.jpg" />
+    <!--meta name="twitter:url" content="" /-->
+    <meta name="description" content="Web Rebels is a non-profit, community driven conference for everyone who loves developing applications and services using web technology.">
+    <script>
+        var _gaq = _gaq || []; _gaq.push(['_setAccount', 'UA-26864429-1']); _gaq.push(['_setDomainName', 'webrebels.org']); _gaq.push(['_trackPageview']);
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>    <style>/* src/css/structure.css */
+
+@font-face {
+    font-family: "RatherLoud";
+    src: url("fonts/RatherLoud-webfont.eot");
+    src: url("fonts/RatherLoud-webfont.eot@") format("embedded-opentype"),
+         url("fonts/RatherLoud-webfont.woff2") format("woff2"),
+         url("fonts/RatherLoud-webfont.woff") format("woff"),
+         url("fonts/RatherLoud-webfont.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* Base 
+------------------------------------------------------*/
+
+html {
+   font-family: Georgia, serif;
+   font-size: 18px;
+   line-height: 1.5;
+   box-sizing: border-box;
+}
+
+body {
+   background-color: #fff;
+   color: #3C3C36;
+   margin: 0;
+   padding: 0;
+}
+
+a {
+   text-decoration: none;
+}
+
+a:link,
+a:visited {
+   color: #69A0A8;
+}
+
+a:hover,
+a:focus,
+a:active {
+   color: #308A8E;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+article, aside, figure, footer, header, nav, section {
+  display: block;
+}
+
+ul, ol, p, img {
+  margin: 0 0 1.5em 0;
+}
+
+ul, ol {
+  padding-left: 1em;
+}
+
+ul {
+  list-style-type: disc;
+}
+
+h1, h2, h3 {
+   margin: 0;
+   line-height: 1.1;
+}
+
+/* hiding content ref http://snook.ca/s/992 */
+.visuallyhidden {
+  position: absolute; 
+  overflow: hidden; 
+  clip: rect(0 0 0 0); 
+  height: 1px; width: 1px; 
+  margin: -1px; padding: 0; border: 0; 
+}
+
+/* self-clear floats from handcraftedcss.com */
+.group:after,
+.floor:after {
+   content: ".";
+   display: block;
+   height: 0;
+   clear: both;
+   visibility: hidden;
+}
+
+/* clearfix */
+.cf {
+    content:"";
+    display:table;
+    clear:both;
+}
+
+.block {
+  clear: both;
+}
+
+article {
+   border-top: 2px solid #efefed;
+   padding-top: 1em;
+   margin-top: 2em;
+}
+
+
+
+/* Layout 
+------------------------------------------------------
+This rebel HQ consists of buildings with various heights.
+Some pages are a low-rise with three storeys.
+Others pages have several floors below the attic.
+And the front page has a swanky penthouse on top.
+
+   /-----/   attic (or penthouse!)
+   =======   floor
+   =======   floor
+   =======   floor
+   #######   cellar   */
+
+.attic {
+  background-color: #4F4F4A;
+  margin-bottom: 20px;
+}
+
+.attic .inner {
+  padding-top: 2em;    
+}
+
+.floor {
+
+}
+
+.inner,
+.inner-nrw,
+.inner-wide {
+   max-width: 90%;
+   margin: 0 auto;
+}
+
+@media screen and (min-width: 1100px) { 
+  .inner {
+    max-width: 1000px;
+  }   
+  .inner-nrw {
+    max-width: 800px;
+  }  
+}
+
+@media screen and (min-width: 1350px) { 
+  .inner-wide {
+    width: 90%;
+    max-width: 1140px;
+  } 
+}
+
+/* specific interiors for fancier floors of the building above the fold */
+
+.penthouse {
+   background: #4F4F4A url("img/bg-penthouse.svg") no-repeat 50% 100%;
+   background-size: contain;
+   min-height: 200px;
+}
+
+@media screen and (min-width: 800px) { 
+   .penthouse {
+      min-height: 300px;
+      margin-bottom: 10px;
+   } 
+}
+
+@media screen and (min-width: 1200px) { 
+   .penthouse {
+      background-size: contain;
+      min-height: 450px;
+   } 
+}
+
+
+
+/* Typography above the fold
+------------------------------------------------------ */
+
+.ratherloud-rebel,
+.ratherloud-heading {
+    font-family: RatherLoud;
+    font-size: 2em;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 0.85;
+}
+
+@media screen and (min-width: 800px) {
+   .ratherloud-rebel,
+   .ratherloud-heading {
+      font-size: 3em;
+   }
+   .rebelwithalongname {
+      font-size: 2.5em;
+   }
+}
+
+@media screen and (min-width: 1000px) {
+   .ratherloud-heading {
+      font-size: 4em;
+   }
+   .rebels .ratherloud-rebel {
+      font-size: 4em;      
+   }
+}
+
+
+.video-thanks {
+  margin-bottom: 0;
+  font-style: italic;
+}
+
+
+/* Colours
+------------------------------------------------------*/
+
+.c0 {color: #3c3c3a;}
+.c1 {color: #997671;}
+.c2 {color: #688C84;}
+.c3 {color: #9D9D9D;}
+.c4 {color: #ccbea7;}
+
+
+
+/* Modules above the fold
+------------------------------------------------------*/
+
+/* Logo and info in the header */
+
+.logo {
+   width: 35%;
+   max-width: 250px;
+   float: left;
+   margin-right: 5%;
+}
+
+.logo > a:hover {
+   position: relative;
+   top: 1px;
+}
+
+.info {
+
+}
+
+
+@media screen and (min-width: 1000px) {
+  .logo {
+      width: 400px;
+      max-width: 400px;
+      float: left;
+      margin-right: 2em;
+   }
+   .info {
+      width: 400px;
+      float: left;
+      text-align: left;
+   }
+}
+
+/* Front page chunks of content */
+
+.gridone,
+.gridtwo {
+
+}
+
+@media screen and (min-width: 600px) {
+   .gridone {
+      width: 48.5%;
+      float: left;
+   }
+   .gridone-a {
+      margin-right: 3%;
+   }
+   .gridone-b {
+      clear: right;
+   }
+   .gridtwo {
+      width: 100%;
+      float: left;
+   }
+}
+
+.chunk {
+   border-color: currentColor;
+   background-repeat: no-repeat;  /* yep */
+   margin-bottom: 20px;
+}
+
+.chunk-linkbox {
+                                  /* background-color: #fff;  meh */
+   box-sizing: border-box;
+   border-width: 6px;
+   border-style: solid;
+   border-color: inherit;
+   display: block;
+   padding: 1em 1em 0.75em 1em;
+}
+
+.chunk-linkbox h2 {
+   margin-bottom: 0.1em;
+}
+
+.chunk-linkbox p {
+   color: #444;
+   margin-bottom: 0;
+}
+
+.chunk-linkbox:hover {
+   opacity: 0.8;
+}
+
+
+/* chunk styles for tickes, openmic, about, previous, sponsors */
+
+.chunk-tickets {
+   background-image: url("img/chunk-tickets.svg");
+   background-position: 95% 0;
+   background-size: auto 140px;
+}
+
+.chunk-tickets .chunk-linkbox {
+   padding-right: 80px;
+}
+
+.chunk-openmic {
+   background-image: url("img/chunk-openmic.svg");
+   background-position: 95% 100%;
+   background-size: auto 80px;
+}
+
+.chunk-openmic .chunk-linkbox {
+   padding-right: 60px;
+}
+
+.chunk-about {
+   background-image: url("img/chunk-webrebels.svg");
+   background-position: 0px 0px;
+   background-size: auto 60px;
+   background-position: 97% 100%;
+}
+
+.chunk-about .chunk-linkbox {
+   padding-bottom: 40px;
+}
+
+.chunk-lookingback {
+   background-image: url("img/chunk-lookingback.svg");
+   background-position: 10px 10px;
+   background-size: auto 50px;
+}
+
+.chunk-lookingback h2 {
+   padding-left: 60px;
+}
+
+.chunk-sponsors {
+   background-image: url("img/chunk-sponsors.svg");
+   background-size: auto 60px;
+   background-position: 95% 10px;
+}
+
+.chunk-sponsors .chunk-linkbox {
+
+}
+
+.chunk-location {
+   background-image: url("img/chunk-location.svg");
+   background-size: auto 70px;
+   background-position: 95% 100%;
+}
+.chunk-location .chunk-linkbox {
+  padding-bottom: 50px;
+}
+
+.chunk-schedule {
+   background-image: url("img/chunk-schedule.svg");
+   background-size: auto 60px;
+   background-position: 95% 10px;
+}
+.chunk-schedule .chunk-linkbox {
+
+}
+
+
+@media screen and (min-width: 800px) {
+   .chunk {
+      margin-bottom: 30px;
+   }
+   .chunk-linkbox h2 {
+      margin-bottom: 0.03em;
+   }
+   .chunk-tickets {
+      background-size: auto 120%;
+      background-position: 97% -40px;
+      padding-bottom: 25px;
+      margin-bottom: -25px;
+   }
+   .chunk-tickets .chunk-linkbox {
+      padding-right: 120px;
+      padding-bottom: 0.75em;
+   }
+   .chunk-openmic {
+      background-size: auto 90%;
+      background-position: 92% 100%;
+      padding-bottom: 0.75em;
+      padding-right: 20px;
+      margin-right: -20px;
+      margin-bottom: 20px;
+   }
+   .chunk-openmic .chunk-linkbox {
+      padding-right: 120px;
+      padding-bottom: 0.75em;
+   }
+   .chunk-about {
+      background-size: auto 95%;
+      background-position: bottom left;
+   }
+   .chunk-about .chunk-linkbox {
+      padding-left: 140px;
+      padding-bottom: 0.75em;
+   }
+   .chunk-lookingback {
+      background-size: auto 100px;
+      background-position: -10px 0;
+      padding-left: 20px;
+      margin-left: -20px;
+   }
+   .chunk-lookingback h2 {
+      padding-left: 80px;
+   }
+   .chunk-sponsors {
+      background-size: auto 140px;
+      background-position: 100% 0;
+      padding-top: 30px;
+      margin-top: -30px;
+   }
+   .chunk-sponsors .chunk-linkbox {
+
+   }
+   .chunk-location {
+      background-size: auto 150px;
+      background-position: 97% 100%;
+   }
+   .chunk-location .chunk-linkbox {
+      padding-bottom: 0.75em;
+      padding-right: 90px;
+   }
+   .chunk-schedule {
+      background-image: url("img/chunk-schedule.svg");
+      background-size: auto 120px;
+      background-position: 100% 0;
+      padding-top: 40px;
+      margin-top: -40px;
+   }
+   .chunk-schedule .chunk-linkbox {
+   
+   }
+}
+
+
+
+/* Video player */
+
+.video {
+  display: none; 
+}
+
+@media screen and (min-width: 900px) { 
+   .video {
+      display: block;     
+   }
+}
+
+.video-box {
+   box-sizing: border-box;
+   border-width: 6px;
+   border-style: solid;
+   border-color: inherit;
+   display: block;
+   padding: 1em 1em 0.25em 1em;  
+}
+
+#qbrick_professional_qbrick1 {
+  width: 952px    !important;
+  height: 536px   !important;
+}</style>
+    <script>document.createElement('picture');</script>
+    <script async="true" defer="true" src="js/app.js"></script>
+</head>
+
+<header class="attic ">
+  <div class="inner group">
+    <h1 class="visuallyhidden">Web Rebels Conference</h1>
+    <div class="logo">
+      <a href="index.html"><img class="logo-img" src="img/logo-webrebels.svg" alt="Web Rebels"></a>
+    </div>
+    <div class="info">
+      <h1 class="ratherloud-heading c4">21<span>–</span>22 May 2015</h1>
+      <h1 class="ratherloud-heading c3">Oslo, Norway</h1>
+    </div>
+  </div>
+</header>
+<div class="floor">
+  <div class="inner-nrw">
+<h1 class="ratherloud-heading">Family Rebels!</h1>
+
+<p>We will try our best to make the entire family enjoy your stay in Oslo. We will assist you in any way we can, just <a href="mailto:familylove[ replace this bracket with a @]webrebels.org">let us know you’re coming</a>! Some of us have kids of our own and we know it can be a challenge arriving in a new city.</p>
+
+<ul class="survivalmenu">
+	<li class="survivalmenu-item ratherloud-heading"><a href="family.html#venue">At the venue</a></li>
+	<li class="survivalmenu-item ratherloud-heading"><a href="family.html#gettingarround">Getting around town</a></li>
+	<li class="survivalmenu-item ratherloud-heading"><a href="family.html#activities">Activities</a></li>
+	<li class="survivalmenu-item ratherloud-heading"><a href="family.html#infant">Infant Rebels</a></li>
+</ul>
+<p>Those of you travelling to Oslo with your families, let us know in advance so we can arrange for mass transit tickets and provide them with direct phone numbers to the organizers which they can use throughout the conference. If you have any questions at all, please just <a href="mailto:familylove[ replace this bracket with a @]webrebels.org">give us a shout</a>.</p>
+
+<a name="venue"></a>
+<h2 class="ratherloud-heading">At the conference venue</h2>
+<p>If you stay at the official conference hotel, Scandic Vulkan, it has some <a href="http://www.scandichotels.no/Hotels/Norge/Oslo/Vulkan/?hotelpage=facilities&facilityid=20220">facilities for children</a> which include a welcoming gift and a playroom. Children under the age of 13 stay for free.</p>
+<p>Right next to the venue is the Cuba Park which is nice for hanging out and playing for kids all ages.</p>
+
+<a name="gettingaround"></a>
+<h2 class="ratherloud-heading">Getting around town</h2>
+<p>Getting around Oslo is easiest done using tram, metro or bus. All you need is the Ruter ticket which the Web Rebels will provide you with. You can plan your travels on <a href="https://ruter.no/">ruter.no</a> or download the <a href="https://ruter.no/en/Services/mobile/">Ruter Reise</a> app.</p>
+
+<a name="activities"></a>
+<h2 class="ratherloud-heading">Activities</h2>
+<h3><a href="http://www.hoppihavet.no/">Hopp i havet</a> (Get in the ocean!)</h3>
+<p>If you've brought the kids along for the conference you might let them check out the local activity center Hopp i Havet (which roughly translates to Jump in the sea). It is a huge building with long slides, trampolines, climbing towers and all kinds of obstacles. It's got loads of fun things all in an atmosphere of being at the bottom of the sea.<br>
+<a href="https://www.google.com/maps/dir/Scandic+Hotel+Vulkan,+Maridalsveien+13,+0175+Oslo,+Norway/Hopp+i+Havet+AS,+Sandakerveien+24C,+0473+Oslo,+Norway/@59.9288301,10.7390494,14z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x46416e659eb51631:0xeb8101e0f8933365!2m2!1d10.751265!2d59.922398!1m5!1m1!1s0x46416e6b51a91e4f:0x53599b8174d32bdd!2m2!1d10.75942!2d59.935001!3e2">Directions</a>
+</p>
+
+<h3><a href="http://www.kolsaas.no/vulkan/">Vulkan Klatresenter (Vulkan Climbing Center)</a></h3>
+<p>If you're up for a little bouldering  or indoor rock climbing, we've got just the thing for you! Right outside the conference venue there is a Vulkan Klatresenter (Vulkan Climbing Center). It's got three different walls and has routes for the novice and the master. It could be worth a visit for the older kids.<br>
+<a href="http://www.visitoslo.com/en/activities-and-attractions/boroughs/grunerlokka/activities/?TLp=182446&Vulkan-Climbing-Centre=">English review</a>
+</p>
+
+<h3><a href="http://www.nhm.uio.no/english/">The Natural History Museum</a></h3>
+<p>It is the home of the world’s oldest complete primate skeleton <a href="http://www.nhm.uio.no/english/visiting/geological-museum/ida/">Ida</a> and they got some pretty awesome dinosaur skeletons. The museum and it's surrounding park area is frequently visited by kindergardens from all over the city and they all love it. With it's <a href="http://www.nhm.uio.no/english/visiting/botanical-garden/">Botanical garden</a>, <a href="http://www.nhm.uio.no/english/visiting/zoological-museum/">Zoological</a> and <a href="http://www.nhm.uio.no/english/visiting/geological-museum/">Geological</a> you are certain to have an educational time. The museum is located in lovely Tøyen and it is close to the Munch Museum and the Tøyen park. Which means you can just go around and hang out in the park or visit some of the museums.<br><a href="http://www.nhm.uio.no/english/visiting/map/">Directions</a>
+</p>
+<h3>Miniature golf</h3>
+<p>At the beginning of the Grünerløkka borough is a <a href="http://aktiviteterforbarn.no/aktivitet/grunerl%C3%B8kka-minigolf-park">miniature golf course</a>. It could make for a welcome break from walking the city. <a href="http://aktiviteterforbarn.no/aktivitet/grunerl%C3%B8kka-minigolf-park/kart">Directions</a></p>
+
+<h3>Island hopping</h3>
+<p>Travelling to the islands just outside the city is easy and all you need is a ticket for public transportation. You can just travel with the boat to see all the islands, or you can hop off and go for a swim or catch some sun. Our beaches aren't sandy and nice, but they are close!<br>
+<a href="https://www.google.com/maps/dir/Scandic+Hotel+Vulkan,+Maridalsveien+13,+0175+Oslo,+Norway/Vippetangen/@59.9133434,10.7316557,14z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x46416e659eb51631:0xeb8101e0f8933365!2m2!1d10.751265!2d59.922398!1m5!1m1!1s0x46416e8fc8ba5075:0x7e2d6f78727792b6!2m2!1d10.740768!2d59.902205!3e3">Directions</a>, we advice you to take the tram and then Bus 60. Once you arrive there signs will show you to where the island ferries are. In the summer you will be accompanied by many fellow travellers making the same journey.</p>
+
+<h3>Spend time on the farm</h3>
+<p>You want to get some fresh air and perhaps even check out some farm animals and stuff? Well, <a href="http://www.bogstad.no/">Bogstad Manor</a> is located right at the beginning of <a href="family.html">Sørkedalen</a>. The farm is overlooking Bogstadvannet (Bogstad lake) and has a little play area for smaller children. The farm has some animals (sheep, cows, horses and goats) and depending on when you go there, they might be around for you to look at. You can stroll in the park connected to the main building. Right next to the farm is the Bogstad beach which is a very nice place for kids to play and go for a swim. If you need a time out from the city, this could be what you need.<br>
+<a href="https://www.google.com/maps/dir/Scandic+Hotel+Vulkan,+Maridalsveien+13,+0175+Oslo,+Norway/Bogstad+G%C3%A5rd,+S%C3%B8rkedalen+826,+0758+Oslo,+Norway/@59.9413597,10.6225426,12z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x46416e659eb51631:0xeb8101e0f8933365!2m2!1d10.751265!2d59.922398!1m5!1m1!1s0x464172a129fbf433:0xf3f3d22d099e2c9d!2m2!1d10.626676!2d59.971804!3e3">Getting there</a> takes you about forty minutes, but on a beautiful summer day it will be well worth it.</p>
+
+<h3>Catch a movie</h3>
+<p>If you're not a native speaker, you can still go enjoy most movies at the cinemas. Norwegian cinema does not dub movies unless they're for kids (and the ones for kids usually have a screening with the original language). In case you want to catch a movie visit <a href="http://www.oslokino.no/article1066750.ece">Oslo kino</a> web site for details.</p>
+
+<h3>Play time in Frogner park</h3>
+<p>Oslo have a few parks which are all nice to give you a bit of a break. The Frogner Park (see details on the <a href="oslo.html#Sights">Oslo Survival Guide</a>) also features a special area were toddlers and small children can enjoy themselves. Just make a left once you go in the entrance (or just follow the noise) and you should see it.</p>
+
+<h3>Heights and adrenaline on the top of Oslo</h3>
+<p>One of the fairly new attractions in Oslo is the <a href="http://www.oslosommerpark.no/welcome-to-oslo-summer-park">Oslo Summer Park</a>. Located overlooking the city it has challenges for kids and adults a like. Going on a tree top safari is fun and great exercise. There are multiple tracks and you will be given safety instructions on site, so no prior experience is needed. If you want more adrenalin, you can rent a down hill bike ride with a lift to get you back up.
+<a href="http://www.oslosommerpark.no/welcome-to-oslo-summer-park/transportation-to-oslo-summerpark#.U2ZY9K1_vFQ">Directions</a>
+</p>
+<h3>Hangout on Tjuvholmen</h3>
+<p>Located right next to the tourist trap Aker Brygge is <a href="http://www.tjuvholmen.no/english/">Tjuvholmen</a>. It has a wide selection of galleries, including the famous <a href="http://www.tjuvholmen.no/english/?did=9097488">Astrup Fearnley Museum</a>. You can enjoy Tjuvholmen even though you aren't into the arts. There are some green lungs out there and kids can even go get their feet wet. However, everything that is located in the proximity of Aker Brygge is expensive even for Norwegian standards. Luckily the cool things to do on Tjuvholmen are free!
+</p>
+
+<a name="infant"></a>
+<h2 class="ratherloud-heading">Infant Rebels</h2>
+<p>If you are bringing baby Rebels to the conference you should find Oslo a fairly easy city to enjoy. Most restaurants and cafes have facilities for you to take care of those special deliveries. You will also find special facilities in most shopping malls for those nursing your baby, but you can also do that wherever you feel comfortable as that is what most Norwegians tend to do.</p>
+
+<p>If you have any questions at all, please just <a href="mailto:familylove[ replace this bracket with a @]webrebels.org">give us a shout</a>, some of us have kids on our own and we know it can be a challenge arriving in a new city on your own.</p>
+</div>
+</div>
+
+
+<div class="floor whereSponsorsLive">
+   <div class="inner-wide">
+    <h2 class="visuallyhidden">Sponsors</h2>
+    <ul class="sponsors group">
+        <li><span class="featured">Breakfast</span><a href="http://netliferesearch.com/" title="Netlife Research">
+          <img src="img/sponsors/netlife.png" alt="Netlife Research"></a></li>
+        <li><span class="featured">Lunch</span><a href="http://www.accenture.no/" title="Accenture">
+          <img src="img/sponsors/accenture.png" alt="Accenture"></a></li>
+        <li><span class="featured">Chill out</span><a href="http://www.ciber.no" title="Ciber">
+          <img src="img/sponsors/ciber.png" alt="Ciber"></a></li>
+        <li><span class="featured">★★★</span><a href="http://bouvet.no" title="Bouvet"><img src="img/sponsors/bouvet.png" alt="Bouvet"></a></li>
+        <li><span class="featured">Coffee</span><a href="http://mandrill.com/" title="Mandrill"><img src="img/sponsors/mandrill.png" alt="Mandrill"></a></li>
+        <li><a href="http://bekk.no" title="Bekk"><img src="img/sponsors/bekk.png" alt="Bekk"></a></li>
+        <li><a href="http://kodemaker.no" title="Kodemaker"><img src="img/sponsors/kodemaker.png" alt="Kodemaker"></a></li>
+        <li><a href="http://www.xeneta.com" title="Xeneta"><img src="img/sponsors/xeneta.png" alt="Xeneta"></a></li>
+        <li><a href="https://www.paypal.com" title="PayPal"><img src="img/sponsors/paypal.png" alt="PayPal"></a></li>
+        <li><a href="http://www.knowit.no/" title="Knowit Norge"><img src="img/sponsors/knowit.png" alt="Knowit"></a></li>
+        <li><a href="http://www.webstep.com/" title="Webstep"><img src="img/sponsors/webstep.png" alt="Webstep"></a></li>
+        <li><a href="http://www.finn.no/" title="Finn.no"><img src="img/sponsors/finn.png" alt="Finn.no"></a></li>
+        <li><a href="http://bocoup.com/" title="Bocoup"><img src="img/sponsors/bocoup.png" alt="Bocoup"></a></li>
+        <li><a href="https://modulus.io/" title="Modulus"><img src="img/sponsors/modulus.png" alt="Modulus"></a></li>
+        <li><a href="http://www.microsoft.no/" title="Microsoft"><img src="img/sponsors/microsoft.png" alt="Microsoft"></a></li>
+        <li><a href="http://www.amedia.no/" title="amedia"><img src="img/sponsors/amedia.png" alt="amedia"></a></li>
+    </ul>
+   </div>
+</div>
+
+
+<footer class="cellar">
+  <div class="inner">
+    <ul class="menu notsoloud">
+      <li class="menu-item"><a href="about.html">About</a></li>
+      <li class="menu-item"><a href="speakers.html">Speakers</a></li>
+      <li class="menu-item"><a href="location.html">Location</a></li>
+      <li class="menu-item"><a href="schedule.html">Schedule</a></li>
+      <li class="menu-item"><a href="videos.html">Videos</a></li>
+      <li class="menu-item"><a href="tickets.html">Tickets</a></li>
+      <li class="menu-item"><a href="openmic.html">Open Mic</a></li>
+      <li class="menu-item"><a href="http://oslo.nodeconf.com/">ONE-SHOT</a></li>
+      <li class="menu-item"><a href="sponsors.html">Sponsors</a></li>
+      <li class="menu-item"><a href="oslo.html">Oslo Survival Guide</a></li>
+      <li class="menu-item"><a href="family.html">Family Rebels</a></li>
+      <li class="menu-item"><a href="scholarship.html" title="Web Rebels Scholarship Programme">Scholarship Programme</a></li>
+      <li class="menu-item"><a href="about.html">Code of Conduct</a></li>
+    </ul>
+    <h2 id="moar" class="notsoloud">Check out previous years! And remember to find, follow, track, like & love us elsewhere:</h2>
+    <ul class="menu notsoloud">
+      <li class="menu-item"><a href="http://2014.webrebels.org/">WR 2014</a></li>
+      <li class="menu-item"><a href="http://2013.webrebels.org/">WR 2013</a></li>
+      <li class="menu-item"><a href="http://2012.webrebels.org/">WR 2012</a></li>
+      <li class="menu-item"><a href="http://twitter.com/web_rebels">Twitter</a></li>
+      <li class="menu-item"><a href="http://lanyrd.com/2015/webrebels/">Lanyrd</a></li>
+      <li class="menu-item"><a href="http://flickr.com/webrebels">Photos</a></li>
+      <li class="menu-item"><a href="https://vimeo.com/webrebels">Video of talks</a></li>
+      <li class="menu-item"><a href="http://webrebels.tumblr.com">Tumblr</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script>
+    var cb = function() {
+        var l = document.createElement('link'); l.rel = 'stylesheet';
+        l.href = '/css/app.css';
+        var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
+    };
+    var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+        webkitRequestAnimationFrame || msRequestAnimationFrame;
+    if (raf) raf(cb);
+    else window.addEventListener('load', cb);
+</script>
+
+</body>
+</html>

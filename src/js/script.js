@@ -1,1 +1,0 @@
-var picturefill = require('picturefill');
