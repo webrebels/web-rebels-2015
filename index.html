@@ -37,7 +37,7 @@
 }
 
 
-/* Base 
+/* Base
 ------------------------------------------------------*/
 
 html {
@@ -97,11 +97,11 @@ h1, h2, h3 {
 
 /* hiding content ref http://snook.ca/s/992 */
 .visuallyhidden {
-  position: absolute; 
-  overflow: hidden; 
-  clip: rect(0 0 0 0); 
-  height: 1px; width: 1px; 
-  margin: -1px; padding: 0; border: 0; 
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px; width: 1px;
+  margin: -1px; padding: 0; border: 0;
 }
 
 /* self-clear floats from handcraftedcss.com */
@@ -133,7 +133,7 @@ article {
 
 
 
-/* Layout 
+/* Layout
 ------------------------------------------------------
 This rebel HQ consists of buildings with various heights.
 Some pages are a low-rise with three storeys.
@@ -152,7 +152,7 @@ And the front page has a swanky penthouse on top.
 }
 
 .attic .inner {
-  padding-top: 2em;    
+  padding-top: 2em;
 }
 
 .floor {
@@ -166,20 +166,20 @@ And the front page has a swanky penthouse on top.
    margin: 0 auto;
 }
 
-@media screen and (min-width: 1100px) { 
+@media screen and (min-width: 1100px) {
   .inner {
     max-width: 1000px;
-  }   
+  }
   .inner-nrw {
     max-width: 800px;
-  }  
+  }
 }
 
-@media screen and (min-width: 1350px) { 
+@media screen and (min-width: 1350px) {
   .inner-wide {
     width: 90%;
     max-width: 1140px;
-  } 
+  }
 }
 
 /* specific interiors for fancier floors of the building above the fold */
@@ -190,18 +190,18 @@ And the front page has a swanky penthouse on top.
    min-height: 200px;
 }
 
-@media screen and (min-width: 800px) { 
+@media screen and (min-width: 800px) {
    .penthouse {
       min-height: 300px;
       margin-bottom: 10px;
-   } 
+   }
 }
 
-@media screen and (min-width: 1200px) { 
+@media screen and (min-width: 1200px) {
    .penthouse {
       background-size: contain;
       min-height: 450px;
-   } 
+   }
 }
 
 
@@ -233,7 +233,7 @@ And the front page has a swanky penthouse on top.
       font-size: 4em;
    }
    .rebels .ratherloud-rebel {
-      font-size: 4em;      
+      font-size: 4em;
    }
 }
 
@@ -488,7 +488,7 @@ And the front page has a swanky penthouse on top.
       margin-top: -40px;
    }
    .chunk-schedule .chunk-linkbox {
-   
+
    }
 }
 
@@ -497,12 +497,12 @@ And the front page has a swanky penthouse on top.
 /* Video player */
 
 .video {
-  display: none; 
+  display: none;
 }
 
-@media screen and (min-width: 900px) { 
+@media screen and (min-width: 900px) {
    .video {
-      display: block;     
+      display: block;
    }
 }
 
@@ -512,7 +512,7 @@ And the front page has a swanky penthouse on top.
    border-style: solid;
    border-color: inherit;
    display: block;
-   padding: 1em 1em 0.25em 1em;  
+   padding: 1em 1em 0.25em 1em;
 }
 
 #qbrick_professional_qbrick1 {
@@ -745,7 +745,7 @@ And the front page has a swanky penthouse on top.
 <script>
     var cb = function() {
         var l = document.createElement('link'); l.rel = 'stylesheet';
-        l.href = '/css/app.css';
+        l.href = 'css/app.css';
         var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
     };
     var raf = requestAnimationFrame || mozRequestAnimationFrame ||
